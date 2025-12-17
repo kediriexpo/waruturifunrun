@@ -683,6 +683,19 @@ function changeBrosurImg(src){
     const payVal = payMethod.value;
     const total = tickets.reduce((a,t)=>a+TICKET_DATA[t.type].price,0);
 
+    let paymentInfo = "";
+
+if (payMethod.dataset.type === "BANK") {
+    const bank = payMethod.value;
+    const rek = payMethod.dataset.rek;
+    const an = payMethod.dataset.an;
+
+    paymentInfo = `${bank} atas Nama ${an}, No Rek ${rek}`;
+} else {
+    paymentInfo = payVal;
+}
+
+
     // 3. Susun Pesan WA (Format Invoice)
     let msg = `*PENDAFTARAN WARUTURI RUN 2026*\n`;
     msg += `--------------------------------\n`;
@@ -705,7 +718,7 @@ function changeBrosurImg(src){
 
     msg += `--------------------------------\n`;
     msg += `💳 *PEMBAYARAN*\n`;
-    msg += `Metode: ${payVal}\n`;
+    msg += `Metode: ${paymentInfo}\n`;
     msg += `*TOTAL: ${fmt(total)}*\n`;
     msg += `--------------------------------\n`;
     msg += `Mohon konfirmasi pesanan ini. Terima kasih! 🙏`;
