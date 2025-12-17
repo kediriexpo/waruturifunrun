@@ -797,7 +797,6 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--background-color), transparent 30%) 0%, color-mix(in srgb, var(--background-color), transparent 50%) 100%);
   z-index: 1;
 }
 
@@ -886,7 +885,6 @@ section,
 
 .hero .detail-item i {
   font-size: 1.2rem;
-  color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -1999,7 +1997,7 @@ section,
 /* Section Fasilitas Run */
 .fasilitas-run {
   padding: 60px 0;
-  background-color: #7879FF;
+  background-color: #0000f9;
 }
 
 .fasilitas-run .section-title h2 {
@@ -2043,7 +2041,7 @@ section,
 /* MOBILE — foto di atas */
 @media (max-width: 768px) {
   .fasilitas-img {
-    height: 230px;
+    height: 100%;
   }
 }
 
@@ -6843,20 +6841,42 @@ font-size: 15px;
 }
 
 @media (max-width: 768px) {
-  .route-preview img {
-    max-width: 100%;
+
+  /* Grid kembali normal (stack ke bawah) */
+  .route-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    overflow-x: visible;
   }
 
+  /* Card wajib full width */
   .route-card {
-    right: 12px;
-    bottom: 12px;
-    min-width: 130px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
-  .route-distance {
-    font-size: 24px;
+  /* Box gambar full width */
+  .route-img-box {
+    width: 100%;
+  }
+
+  .route-img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Info juga full */
+  .route-info {
+    width: 100%;
   }
 }
+
+
 .route-detail {
   display: none;
   margin-top: 30px;
@@ -8351,7 +8371,8 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, rgba(11, 124, 255, 0.85), rgba(0, 182, 219, 0.85)),
-      url('https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat fixed;
+    url('https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat fixed;
+    
     color: #fff;
     font-family: 'Segoe UI', sans-serif;
   }
@@ -8398,7 +8419,7 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
   }
 
   .detail-item i {
-    color: black;
+    color: white;
     font-size: 20px;
   }
 
@@ -8918,19 +8939,27 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     }
 
 
-    /* 1. CONTAINER UTAMA */
+    /* ============================= */
+/* 1. CONTAINER UTAMA */
+/* ============================= */
 .route-wrapper {
-    padding: 80px 24px;
+    width: 100%;
+    padding: 80px 0;
     background-color: #f8fafc;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .box-route {
-    max-width: 1200px; /* Lebih lega untuk desktop */
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
 }
 
+/* ============================= */
 /* 2. HEADER */
+/* ============================= */
 .route-header {
     text-align: center;
     margin-bottom: 60px;
@@ -8938,7 +8967,7 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
 
 .route-main-title {
     color: #1e3a8a;
-    font-size: 36px; /* Lebih proporsional di desktop */
+    font-size: 36px;
     font-weight: 800;
     margin-bottom: 12px;
     text-transform: uppercase;
@@ -8953,14 +8982,22 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     line-height: 1.6;
 }
 
+/* ============================= */
 /* 3. GRID LAYOUT */
+/* DESKTOP: 2 KOLOM */
+/* ============================= */
+/* DESKTOP DEFAULT */
 .route-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 40px; /* Lebih lega */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  width: 100%;
 }
 
-/* 4. CARD STYLE */
+
+/* ============================= */
+/* 4. CARD */
+/* ============================= */
 .route-card {
     background: #ffffff;
     border-radius: 22px;
@@ -8968,7 +9005,12 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     border: 1px solid #e2e8f0;
     box-shadow: 0 12px 32px rgba(0,0,0,0.06);
     position: relative;
+    width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
 }
 
 .route-card:hover {
@@ -8976,7 +9018,9 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     box-shadow: 0 18px 40px rgba(0,0,0,0.08);
 }
 
-/* BADGE KATEGORI */
+/* ============================= */
+/* BADGE */
+/* ============================= */
 .route-badge {
     position: absolute;
     top: 22px;
@@ -8993,10 +9037,12 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
 .badge-5k  { background-color: #0ea5e9; }
 .badge-10k { background-color: #1e3a8a; }
 
-/* GAMBAR PETA */
+/* ============================= */
+/* GAMBAR */
+/* ============================= */
 .route-img-box {
     width: 100%;
-    height: 300px; /* Lebih tinggi untuk desktop */
+    aspect-ratio: 4 / 3;   /* lebih cocok untuk map */
     overflow: hidden;
     background-color: #e5e7eb;
 }
@@ -9005,6 +9051,7 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
     transition: transform 0.5s ease;
 }
 
@@ -9012,9 +9059,11 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     transform: scale(1.06);
 }
 
-/* INFO TEXT */
+/* ============================= */
+/* INFO */
+/* ============================= */
 .route-info {
-    padding: 30px;
+    padding: 28px 32px;
 }
 
 .route-info h3 {
@@ -9029,9 +9078,12 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     color: #64748b;
     line-height: 1.7;
     margin-bottom: 22px;
+    max-width: 100%;
 }
 
-/* SPESIFIKASI RUTE */
+/* ============================= */
+/* SPESIFIKASI */
+/* ============================= */
 .route-specs {
     list-style: none;
     padding: 18px 0 0;
@@ -9054,55 +9106,70 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     font-size: 16px;
 }
 
-/* RESPONSIF TABLET & HP */
+/* ============================= */
+/* 5. MOBILE */
+/* MOBILE: 1 KOLOM */
+/* ============================= */
 @media (max-width: 768px) {
-    .route-wrapper {
-        padding: 60px 16px;
-    }
 
-    .route-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
-    }
-
-    .route-main-title {
-        font-size: 26px;
-    }
-
-    .route-img-box {
-        height: 220px;
-    }
-}
-
-/* FIX LAYOUT ROUTE DESKTOP */
-.route-wrapper .box-route {
-  max-width: 1200px !important;
-  width: 100% !important;
-}
-
-@media (min-width: 992px) {
-  .route-wrapper .route-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 48px;
-  }
-
-  .route-wrapper .route-img-box {
-    height: 320px;
-  }
-}
-@media (min-width: 992px) {
-
+  /* Grid 1 kolom + center */
   .route-grid {
-    align-items: stretch;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;   /* CENTER CARD */
   }
 
-  .route-grid > .route-card {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
+  /* Card benar-benar di tengah */
+  .route-card {
+    width: 100%;
+    max-width: 420px;        /* agar tidak terlalu lebar di HP */
   }
 
+  /* Judul section */
+  .route-main-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  /* Badge tetap rapi */
+  .route-badge {
+    top: 16px;
+    left: 16px;
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  /* Konten text center */
+  .route-info {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .route-info h3 {
+    font-size: 20px;
+  }
+
+  .route-info p {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* List specs center tapi tetap readable */
+  .route-specs {
+    text-align: left;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .route-specs li {
+    font-size: 14px;
+    justify-content: flex-start;
+  }
 }
+
+
+
 /* SECTION */
 .daftar-section {
   padding: 90px 0;
@@ -9211,6 +9278,197 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     font-size: 20px;
   }
 }
+
+
+/* ============================= */
+/* FOOTER WRAPPER */
+/* ============================= */
+.fitur.latar-biru {
+  background: linear-gradient(135deg, #0b5ed7, #0dcaf0);
+  padding: 60px 0;
+  color: #ffffff;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+.konten.kecil.putih {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+/* ============================= */
+/* KOLOM */
+/* ============================= */
+.kol-footer {
+  width: 100%;
+}
+
+.kol-14 {
+  grid-column: span 1;
+}
+
+.kol4 {
+  grid-column: span 1;
+}
+
+/* ============================= */
+/* BOX */
+/* ============================= */
+.kol-footer .box {
+  line-height: 1.7;
+}
+
+.kol-footer p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #e0f2fe;
+}
+
+/* ============================= */
+/* JUDUL KOLOM */
+/* ============================= */
+.tebal.normal {
+  font-weight: 800;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+/* ============================= */
+/* LINK */
+/* ============================= */
+.kol-footer a.putih {
+  color: #e0f2fe;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.kol-footer a.putih:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* ICON */
+/* ============================= */
+.kol-footer i {
+  margin-right: 8px;
+  color: #bae6fd;
+}
+
+/* ============================= */
+/* SOSIAL MEDIA */
+/* ============================= */
+.btn-mp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  margin-right: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-putih {
+  background-color: #ffffff;
+}
+
+.btn-mp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.img-mp {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* ============================= */
+/* ALIGNMENT */
+/* ============================= */
+.teks-kanan {
+  text-align: right;
+}
+
+/* ============================= */
+/* RESPONSIVE MOBILE */
+/* ============================= */
+/* ============================= */
+/* RESPONSIVE MOBILE */
+/* ============================= */
+@media (max-width: 768px) {
+
+  .konten.kecil.putih {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* Paksa semua jadi rata kiri */
+  .teks-kanan {
+    text-align: left;
+  }
+
+  .btn-mp {
+    margin-right: 10px;
+  }
+}
+
+/* ============================= */
+/* FLOATING BUTTON BASE */
+/* ============================= */
+.fab-btn {
+  width: 54px;
+  height: 54px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+/* ============================= */
+/* HOVER EFFECT */
+/* ============================= */
+.fab-btn:hover {
+  transform: rotate(8deg) scale(1.08);
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+
+/* ============================= */
+/* CUSTOM COLOR (OPTIONAL) */
+/* ============================= */
+.fab-trophy {
+  background-color: #0d6efd;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.fab-wa {
+  background-color: #198754;
+  border: none;
+}
+
+/* ============================= */
+/* MOBILE ADJUSTMENT */
+/* ============================= */
+@media (max-width: 480px) {
+  .fab-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
