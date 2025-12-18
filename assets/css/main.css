@@ -9073,6 +9073,7 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     line-height: 1.7;
     margin-bottom: 22px;
     max-width: 100%;
+    text-align: left;
 }
 
 /* ============================= */
@@ -9147,6 +9148,7 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     font-size: 14px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
   }
 
   /* List specs center tapi tetap readable */
