@@ -7586,14 +7586,6 @@ font-size: 15px;
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  transition: transform 0.2s;
-}
-
-.cat-card:hover {
-  background: #fff;
-  border-color: #0d6efd;
-  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.1);
-  transform: translateY(-2px);
 }
 
 .cat-icon {
@@ -9632,6 +9624,16 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
     }
   }
 }
+
+/* ======================================
+   Waru Turi Fun Run 2026
+   BLUE DOMINANT THEME (Bootstrap 5)
+   ====================================== */
+
+/* =================================================
+   ABOUT FUN RUN – BLUE THEME (SCOPED)
+   Tidak mempengaruhi global website
+   ================================================= */
 
 .about-funrun{
   --wr-primary: #0d6efd;
