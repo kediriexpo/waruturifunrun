@@ -10272,6 +10272,7 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
 #wt-contact .contact-grid{
   display: grid;
   gap: 18px;
+  margin-top: 20px;
 }
 @media (min-width: 992px){
   #wt-contact .contact-grid{
