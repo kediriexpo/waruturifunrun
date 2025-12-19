@@ -10124,6 +10124,390 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
   font-size: clamp(1.02rem, 1.1vw, 1.08rem);
 }
 
+/* ============================
+   WT CONTACT (Scoped to #wt-contact)
+   Works with your existing HTML classes:
+   .scam-alert, .alert-icon, .alert-text,
+   .contact-grid, .contact-section, .section-title,
+   .contact-card, .payment-card, .card-item,
+   .bank-item, .bank-info, .payment-note
+   ============================ */
+/* ============================
+   WT CONTACT — Luxury + Animations (SCOPED)
+   ============================ */
+
+/* Anti “geser ke samping” */
+#wt-contact{
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: clamp(28px, 4.5vw, 58px) 0;
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+}
+@supports not (overflow: clip){
+  #wt-contact{ overflow-x: hidden; }
+}
+
+/* Background luxury (navy + gold glow) */
+#wt-contact::before{
+  content:"";
+  position:absolute;
+  width: 560px;
+  height: 560px;
+  right: -260px;
+  top: -300px;
+  background: radial-gradient(circle at 30% 30%, rgba(13,110,253,.18), transparent 62%);
+  pointer-events:none;
+  z-index:-1;
+  filter: blur(1px);
+}
+#wt-contact::after{
+  content:"";
+  position:absolute;
+  width: 620px;
+  height: 620px;
+  left: -300px;
+  bottom: -340px;
+  background: radial-gradient(circle at 40% 40%, rgba(255,193,7,.20), transparent 64%);
+  pointer-events:none;
+  z-index:-1;
+  filter: blur(1px);
+}
+
+/* Respect user settings */
+@media (prefers-reduced-motion: reduce){
+  #wt-contact *{ animation: none !important; transition: none !important; }
+}
+
+/* ===== Keyframes (Luxury motion) ===== */
+@keyframes wtc-float {
+  0%,100%{ transform: translateY(0); }
+  50%{ transform: translateY(-4px); }
+}
+@keyframes wtc-shimmer {
+  0%{ transform: translateX(-120%); opacity: .0; }
+  30%{ opacity: .55; }
+  100%{ transform: translateX(120%); opacity: .0; }
+}
+@keyframes wtc-softPulse {
+  0%,100%{ transform: scale(1); }
+  50%{ transform: scale(1.03); }
+}
+@keyframes wtc-fadeUp {
+  from{ opacity:0; transform: translateY(10px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+
+/* Apply entrance animation */
+#wt-contact .scam-alert,
+#wt-contact .contact-section{
+  animation: wtc-fadeUp .55s ease both;
+}
+#wt-contact .contact-section:nth-child(2){ animation-delay: .08s; }
+
+/* ===== ALERT ===== */
+#wt-contact .scam-alert{
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 14px;
+  align-items: start;
+
+  padding: 18px 18px;
+  border-radius: 22px;
+
+  /* glass + premium border */
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.74));
+  border: 1px solid rgba(220,53,69,.24);
+  box-shadow: 0 18px 60px rgba(220,53,69,.10);
+  backdrop-filter: blur(12px);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* shimmer sweep */
+#wt-contact .scam-alert::after{
+  content:"";
+  position:absolute;
+  top: -30%;
+  left: -50%;
+  width: 55%;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.65), transparent);
+  transform: translateX(-120%);
+  animation: wtc-shimmer 3.2s ease-in-out infinite;
+  pointer-events:none;
+}
+
+#wt-contact .alert-icon{
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+
+  background: rgba(220,53,69,.10);
+  border: 1px solid rgba(220,53,69,.18);
+  color: #dc3545;
+  font-size: 20px;
+
+  animation: wtc-softPulse 1.8s ease-in-out infinite;
+}
+
+/* Pastikan ikon FA kebaca */
+#wt-contact .alert-icon i{ font-size: 20px; }
+
+#wt-contact .alert-text{
+  font-size: clamp(1.02rem, 1.2vw, 1.12rem);
+  line-height: 1.8;
+  color: rgba(11,27,52,.84);
+}
+#wt-contact .alert-text strong{
+  color: #0b1b34;
+  font-weight: 950;
+}
+
+/* ===== GRID ===== */
+#wt-contact .contact-grid{
+  display: grid;
+  gap: 18px;
+}
+@media (min-width: 992px){
+  #wt-contact .contact-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+}
+
+/* ===== SECTION PANEL (Luxury card) ===== */
+#wt-contact .contact-section{
+  border-radius: 26px;
+  overflow: hidden;
+  position: relative;
+
+  /* premium glass */
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72));
+  border: 1px solid rgba(13,110,253,.16);
+  box-shadow: 0 22px 70px rgba(11,27,52,.10);
+  backdrop-filter: blur(12px);
+
+  transform: translateY(0);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+/* gradient top accent */
+#wt-contact .contact-section::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(13,110,253,.65), rgba(255,193,7,.65));
+  opacity: .75;
+}
+
+/* subtle border glow animation */
+#wt-contact .contact-section::after{
+  content:"";
+  position:absolute;
+  inset: -1px;
+  border-radius: 26px;
+  background: linear-gradient(90deg, rgba(13,110,253,.0), rgba(255,193,7,.12), rgba(13,110,253,.0));
+  opacity: .0;
+  pointer-events:none;
+  transition: opacity .22s ease;
+}
+#wt-contact .contact-section:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 30px 90px rgba(11,27,52,.14);
+  border-color: rgba(13,110,253,.22);
+}
+#wt-contact .contact-section:hover::after{ opacity: 1; }
+
+/* ===== TITLE ===== */
+#wt-contact .section-title{
+  margin: 0;
+  padding: 18px 18px 12px;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  letter-spacing: -0.02em;
+  color: #0b1b34;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Title icon pill — bikin “mewah” */
+#wt-contact .section-title i{
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+
+  background: radial-gradient(circle at 30% 30%, rgba(255,193,7,.18), rgba(13,110,253,.10));
+  border: 1px solid rgba(13,110,253,.18);
+  color: rgba(11,27,52,.90);
+
+  animation: wtc-float 2.6s ease-in-out infinite;
+}
+
+/* Body spacing */
+#wt-contact .contact-card,
+#wt-contact .payment-card{
+  padding: 0 18px 18px;
+}
+
+/* ===== CONTACT ITEMS ===== */
+#wt-contact .card-item{
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 12px;
+  align-items: start;
+
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.80);
+  border: 1px solid rgba(11,27,52,.10);
+  box-shadow: 0 14px 34px rgba(11,27,52,.06);
+
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+#wt-contact .card-item + .card-item{ margin-top: 12px; }
+
+#wt-contact .card-item:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 22px 60px rgba(11,27,52,.12);
+  border-color: rgba(13,110,253,.20);
+}
+
+/* IMPORTANT: icon selector (kamu pakai <i> langsung di .card-item) */
+#wt-contact .card-item > i{
+  width: 54px;
+  height: 54px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+}
+
+/* WhatsApp icon style */
+#wt-contact .card-item > i.fa-whatsapp{
+  background: rgba(25,135,84,.10);
+  border: 1px solid rgba(25,135,84,.18);
+  color: #198754;
+  animation: wtc-float 3.2s ease-in-out infinite;
+}
+
+/* Envelope icon style */
+#wt-contact .card-item > i.fa-envelope{
+  background: rgba(13,110,253,.10);
+  border: 1px solid rgba(13,110,253,.18);
+  color: #0d6efd;
+  animation: wtc-float 3.2s ease-in-out infinite;
+}
+
+/* Text */
+#wt-contact .card-item span{
+  display: block;
+  font-weight: 950;
+  color: #0b1b34;
+  letter-spacing: -0.01em;
+  font-size: 1.12rem;
+}
+#wt-contact .card-item p{
+  margin: 4px 0 0;
+  color: rgba(11,27,52,.76);
+  line-height: 1.65;
+  font-size: 1.02rem;
+  word-break: break-word;
+}
+
+/* ===== BANK ITEMS ===== */
+#wt-contact .bank-item{
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 14px;
+  align-items: center;
+
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.80);
+  border: 1px solid rgba(11,27,52,.10);
+  box-shadow: 0 14px 34px rgba(11,27,52,.06);
+
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+#wt-contact .bank-item + .bank-item{ margin-top: 12px; }
+
+#wt-contact .bank-item:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 22px 60px rgba(11,27,52,.12);
+  border-color: rgba(13,110,253,.20);
+}
+
+/* Logo “badge” */
+#wt-contact .bank-item img{
+  width: 92px;
+  height: 62px;
+  object-fit: contain;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(11,27,52,.08);
+  box-shadow: inset 0 0 0 1px rgba(255,193,7,.10);
+}
+
+/* Bank info typography */
+#wt-contact .bank-info strong{
+  display: block;
+  font-size: 1.18rem;
+  font-weight: 1000;
+  color: #0b1b34;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+#wt-contact .bank-info p{
+  margin: 0 0 4px;
+  color: rgba(11,27,52,.78);
+  font-size: 1.03rem;
+  line-height: 1.6;
+}
+#wt-contact .bank-info small{
+  color: rgba(11,27,52,.62);
+  font-size: .98rem;
+}
+
+/* ===== NOTE ===== */
+#wt-contact .payment-note{
+  margin-top: 14px;
+  padding: 13px 14px;
+  border-radius: 18px;
+  border: 1px dashed rgba(255,193,7,.55);
+  background: linear-gradient(135deg, rgba(255,193,7,.14), rgba(13,110,253,.06));
+  color: rgba(11,27,52,.84);
+  line-height: 1.65;
+  font-size: 1.02rem;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 420px){
+  #wt-contact .scam-alert{ grid-template-columns: 1fr; }
+  #wt-contact .bank-item{ grid-template-columns: 1fr; }
+  #wt-contact .bank-item img{ width: 98px; height: 64px; }
+}
+
+/* Kunci agar tidak bisa geser ke samping */
+#wt-contact{
+  overflow-x: clip;   /* modern: lebih bagus dari hidden */
+  overflow-y: visible;
+}
+
+/* fallback untuk browser lama */
+@supports not (overflow: clip){
+  #wt-contact{ overflow-x: hidden; }
+}
 
 
 /*--------------------------------------------------------------
