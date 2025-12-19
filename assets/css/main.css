@@ -9833,6 +9833,84 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
   font-size: 1.4rem;
   color: #0d6efd;
 }
+/* ===== JERSEY SECTION (Scoped) ===== */
+.jersey-card-text{
+  background: #ffffff;
+  border: 1px solid rgba(13,110,253,.16);
+  box-shadow: 0 14px 36px rgba(13,110,253,.12);
+}
+
+.jersey-card-img{
+  border: 1px solid rgba(13,110,253,.16);
+  box-shadow: 0 14px 36px rgba(13,110,253,.12);
+}
+
+.jersey-card-img img{
+  transition: transform .35s ease;
+}
+.jersey-card-img:hover img{
+  transform: scale(1.04);
+}
+
+.jersey-icon-box{
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13,110,253,.10);
+  border: 1px solid rgba(13,110,253,.18);
+}
+
+.jersey-icon-box i{
+  font-size: 1.4rem;
+  color: #0d6efd;
+}
+
+.jersey-title{
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0b1b34;
+}
+
+.jersey-subtitle{
+  color: rgba(11,27,52,.72);
+}
+
+.jersey-desc{
+  color: rgba(11,27,52,.78);
+  line-height: 1.7;
+}
+
+.jersey-feature{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 14px;
+  border-radius: 16px;
+  background: rgba(13,110,253,.06);
+  border: 1px solid rgba(13,110,253,.14);
+}
+
+.jersey-feature i{
+  font-size: 1.4rem;
+  color: #0d6efd;
+}
+
+.jersey-note{
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(13,110,253,.08);
+  border: 1px solid rgba(13,110,253,.14);
+  color: rgba(11,27,52,.82);
+}
+.jersey-note i{
+  color: #0d6efd;
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
