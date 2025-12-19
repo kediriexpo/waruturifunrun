@@ -9912,36 +9912,219 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
   color: #0d6efd;
 }
 
-/* ===== MEDAL GALLERY (Scoped) ===== */
-#medal-gallery .mg-title{
-  color:#0b1b34;
-  letter-spacing:-0.02em;
+/* ===== Medal Philosophy (Zigzag, Livelier) ===== */
+.medal-philosophy{
+  padding: clamp(40px, 4.5vw, 84px) 0;
+  position: relative;
+  overflow: hidden;
 }
 
-#medal-gallery .mg-subtitle{
-  color: rgba(11,27,52,.70);
+/* Background glow halus biar nggak flat */
+.medal-philosophy::before{
+  content:"";
+  position:absolute;
+  width: 520px;
+  height: 520px;
+  right: -180px;
+  top: -220px;
+  background: radial-gradient(circle at 35% 35%, rgba(13,110,253,.16), transparent 60%);
+  pointer-events:none;
+}
+.medal-philosophy::after{
+  content:"";
+  position:absolute;
+  width: 560px;
+  height: 560px;
+  left: -220px;
+  bottom: -260px;
+  background: radial-gradient(circle at 40% 40%, rgba(255,193,7,.18), transparent 62%);
+  pointer-events:none;
 }
 
-#medal-gallery .mg-card{
-  border: 1px solid rgba(13,110,253,.16);
-  box-shadow: 0 14px 36px rgba(13,110,253,.12);
-  background: #fff;
-  transition: transform .25s ease, box-shadow .25s ease;
+.mp-container{
+  width: min(1120px, 92%);
+  margin: auto;
+  position: relative;
+  z-index: 1;
 }
 
-#medal-gallery .mg-card img{
+/* Header */
+.mp-header{ margin-bottom: clamp(24px, 3.2vw, 46px); }
+.mp-eyebrow{
+  font-size: .82rem;
+  letter-spacing: .18em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(11,27,52,.65);
+  margin: 0 0 10px;
+}
+.mp-title{
+  font-size: clamp(2rem, 3.5vw, 2.8rem); /* lebih besar */
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+  color: #0b1b34;
+}
+.mp-lead{
+  max-width: 75ch;
+  line-height: 1.85;
+  color: rgba(11,27,52,.78);
+  font-size: clamp(1.05rem, 1.2vw, 1.12rem); /* lebih besar */
+  margin: 0;
+}
+
+/* Stack */
+.mp-stack{
+  display: grid;
+  gap: clamp(18px, 3vw, 34px);
+}
+
+/* Row as “card” supaya lebih engaging */
+.mp-row{
+  display: grid;
+  gap: clamp(14px, 2.5vw, 26px);
+  align-items: center;
+  padding: clamp(14px, 2.6vw, 18px);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72));
+  border: 1px solid rgba(13,110,253,.14);
+  box-shadow: 0 14px 44px rgba(11,27,52,.10);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  position: relative;
+}
+
+/* Accent line biar ada “branding” */
+.mp-row::before{
+  content:"";
+  position:absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(13,110,253,.55), rgba(255,193,7,.55));
+  opacity: .55;
+  border-radius: 22px 22px 0 0;
+}
+
+.mp-row:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 18px 54px rgba(11,27,52,.16);
+  border-color: rgba(13,110,253,.22);
+}
+
+@media (min-width: 820px){
+  .mp-row{ grid-template-columns: 1fr 1fr; }
+  .mp-row--reverse{ direction: rtl; }
+  .mp-row--reverse > *{ direction: ltr; }
+}
+
+/* Media */
+.mp-media{
+  aspect-ratio: 16 / 9;
+  height: clamp(210px, 24vw, 300px); /* proporsional & tidak kebesaran */
+  overflow: hidden;
+  border-radius: 18px;
+  background: #f1f3f7;
+  position: relative;
+  isolation: isolate;
+}
+
+/* Gambar default: cover (boleh ter-crop sedikit) */
+.mp-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
   transition: transform .35s ease;
-  display:block;
 }
 
-#medal-gallery .mg-card:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 18px 44px rgba(13,110,253,.18);
-}
-
-#medal-gallery .mg-card:hover img{
+/* Hover zoom halus */
+.mp-row:hover .mp-media img{
   transform: scale(1.04);
 }
+
+/* KHUSUS TOPENG: tidak terpotong */
+.mp-media--contain{
+  background: radial-gradient(circle at 50% 35%, rgba(13,110,253,.10), rgba(255,193,7,.08));
+}
+.mp-media--contain img{
+  object-fit: contain;      /* kunci supaya tidak crop */
+  transform: none;          /* hindari zoom yang bikin “mentok” */
+  padding: 10px;            /* beri napas */
+}
+.mp-row:hover .mp-media--contain img{
+  transform: none;          /* tetap */
+}
+
+/* Content */
+.mp-content{
+  padding: clamp(6px, 1.2vw, 12px);
+}
+
+.mp-meta{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mp-num{
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: rgba(11,27,52,.85);
+  font-size: 1.05rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(11,27,52,.06);
+}
+
+.mp-badge{
+  font-size: .85rem;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(13,110,253,.18);
+  background: rgba(13,110,253,.06);
+  color: rgba(11,27,52,.82);
+}
+
+.mp-content h3{
+  margin: 0 0 10px;
+  font-size: clamp(1.25rem, 1.4vw, 1.4rem); /* lebih besar */
+  letter-spacing: -0.02em;
+  color: #0b1b34;
+}
+
+.mp-content p{
+  margin: 0;
+  line-height: 1.9; /* lebih nyaman dibaca */
+  color: rgba(11,27,52,.78);
+  font-size: clamp(1.02rem, 1.15vw, 1.08rem); /* lebih besar */
+}
+
+/* Summary */
+.mp-summary{
+  margin-top: clamp(26px, 3.5vw, 44px);
+  padding: clamp(18px, 2.8vw, 28px);
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(13,110,253,.07), rgba(255,193,7,.10));
+  border: 1px solid rgba(11,27,52,.10);
+  box-shadow: 0 12px 34px rgba(11,27,52,.08);
+}
+
+.mp-summary h3{
+  margin: 0 0 10px;
+  font-size: clamp(1.25rem, 1.35vw, 1.45rem);
+  letter-spacing: -0.02em;
+  color: #0b1b34;
+}
+
+.mp-summary p{
+  margin: 0;
+  line-height: 1.9;
+  color: rgba(11,27,52,.78);
+  font-size: clamp(1.02rem, 1.1vw, 1.08rem);
+}
+
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
