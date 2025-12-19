@@ -1301,8 +1301,6 @@ section,
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 85%);
-  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
-  transition: all 0.3s ease;
 }
 
 .intro .image-wrapper:hover {
