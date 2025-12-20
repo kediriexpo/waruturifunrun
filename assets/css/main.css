@@ -2534,7 +2534,7 @@ section,
   border-radius: 22px;
   padding: 40px;
   display: flex;
-  gap: 190px;
+  gap: 20px;
   justify-content: flex-start;
   align-items: center;
   box-shadow: 0 12px 40px rgba(0,0,0,0.18);
@@ -2542,15 +2542,24 @@ section,
   margin: 0 auto;   /* agar tetap center */
 }
 
+.chart-left {
+  flex: 0 0 38%;   /* kolom gambar */
+}
+
+.chart-right {
+  flex: 0 0 52%;   /* kolom tabel */
+  overflow-x: auto; /* jaga-jaga kalau layar kecil */
+}
 /* Jersey image */
 .jersey-img {
-  width: 180%;
+  width: 70%;
   border-radius: 12px;
 }
 
 /* Table Style */
 .size-table {
-  width: 170%;
+  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   font-size: 16px;
 }
@@ -8669,8 +8678,8 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
   min-height: 420px;
   
   /* UPDATED BACKGROUND STYLE (Matching Main Hero) */
-  background: linear-gradient(135deg, rgba(11, 124, 255, 0.85), rgba(0, 182, 219, 0.85)),
-    url('https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat fixed;
+  background: linear-gradient(135deg, rgba(11, 124, 255, 0.50), rgba(0, 182, 219, 0.85)),
+    url('../img/herobendungan.jpeg') center/cover no-repeat;
     
   display: flex;
   align-items: center;
