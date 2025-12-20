@@ -52,7 +52,7 @@
         <h1 class="sitename"></h1>
       </a>
 
-<nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
        <ul>
           <li><a href="/">Home</a></li>
          <li><a href="about.html">About</a></li>
@@ -96,81 +96,7 @@
 </section>
     <!-- End Page Title -->
 
-<section id="size-chart" class="size-chart section">
-  <div class="container">
 
-    <!-- Title -->
-    <h2 class="chart-title text-center mb-4">Size Chart Jersey Waru Turi Fun Run</h2>
-
-    <!-- Toggle Button -->
-    <div class="chart-toggle text-center mb-4">
-      <button class="toggle-btn active">Unisex</button>
-    </div>
-
-    <!-- Chart Box -->
-    <div class="chart-box">
-
-      <!-- Left Jersey Image -->
-      <div class="chart-left">
-        <img src="sizechart.jpg" alt="Jersey Waru Turi Fun Run" class="jersey-img">
-      </div>
-
-      <!-- Right Size Table -->
-      <div class="chart-right">
-        <table class="size-table">
-          <thead>
-            <tr>
-              <th>Size</th>
-              <th>Panjang (cm)</th>
-              <th>Lebar (cm)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>S</td><td>68</td><td>46</td></tr>
-            <tr><td>M</td><td>69</td><td>48</td></tr>
-            <tr><td>L</td><td>72</td><td>52</td></tr>
-            <tr><td>XL</td><td>75</td><td>53</td></tr>
-            <tr><td>XXL</td><td>79</td><td>55</td></tr>
-            <tr><td>XXXL</td><td>81</td><td>57</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<script>
-const buttons = document.querySelectorAll(".toggle-btn");
-const tbody = document.querySelector(".size-table tbody");
-
-const unisex = `
-  <tr><td>S</td><td>68</td><td>46</td></tr>
-  <tr><td>M</td><td>69</td><td>48</td></tr>
-  <tr><td>L</td><td>72</td><td>52</td></tr>
-  <tr><td>XL</td><td>75</td><td>53</td></tr>
-  <tr><td>2XL</td><td>79</td><td>55</td></tr>
-  <tr><td>3XL</td><td>81</td><td>57</td></tr>
-`;
-
-const kid = `
-  <tr><td>XS</td><td>48</td><td>36</td></tr>
-  <tr><td>S</td><td>52</td><td>38</td></tr>
-  <tr><td>M</td><td>56</td><td>40</td></tr>
-  <tr><td>L</td><td>60</td><td>42</td></tr>
-  <tr><td>XL</td><td>64</td><td>44</td></tr>
-`;
-
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    buttons.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    tbody.innerHTML = btn.innerText === "Kid" ? kid : unisex;
-  });
-});
-</script>
 <!-- SECTION: Jersey 1 (Image Left - Text Right) -->
 <section id="jersey-showcase" class="py-5">
   <div class="container">
@@ -308,6 +234,82 @@ buttons.forEach(btn => {
   </div>
 </section>
 
+<section id="size-chart" class="size-chart section">
+  <div class="container">
+
+    <!-- Title -->
+    <h2 class="chart-title text-center mb-4">Size Chart Jersey Waru Turi Fun Run</h2>
+
+    <!-- Toggle Button -->
+    <div class="chart-toggle text-center mb-4">
+      <button class="toggle-btn active">Unisex</button>
+    </div>
+
+    <!-- Chart Box -->
+    <div class="chart-box">
+
+      <!-- Left Jersey Image -->
+      <div class="chart-left">
+        <img src="assets/img/jerseysize.jpeg" alt="Jersey Waru Turi Fun Run" class="jersey-img">
+      </div>
+
+      <!-- Right Size Table -->
+      <div class="chart-right">
+        <table class="size-table">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Panjang (cm)</th>
+              <th>Lebar (cm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>S</td><td>68</td><td>46</td></tr>
+            <tr><td>M</td><td>69</td><td>48</td></tr>
+            <tr><td>L</td><td>72</td><td>52</td></tr>
+            <tr><td>XL</td><td>75</td><td>53</td></tr>
+            <tr><td>XXL</td><td>79</td><td>55</td></tr>
+            <tr><td>XXXL</td><td>81</td><td>57</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+const buttons = document.querySelectorAll(".toggle-btn");
+const tbody = document.querySelector(".size-table tbody");
+
+const unisex = `
+  <tr><td>S</td><td>68</td><td>46</td></tr>
+  <tr><td>M</td><td>69</td><td>48</td></tr>
+  <tr><td>L</td><td>72</td><td>52</td></tr>
+  <tr><td>XL</td><td>75</td><td>53</td></tr>
+  <tr><td>2XL</td><td>79</td><td>55</td></tr>
+  <tr><td>3XL</td><td>81</td><td>57</td></tr>
+`;
+
+const kid = `
+  <tr><td>XS</td><td>48</td><td>36</td></tr>
+  <tr><td>S</td><td>52</td><td>38</td></tr>
+  <tr><td>M</td><td>56</td><td>40</td></tr>
+  <tr><td>L</td><td>60</td><td>42</td></tr>
+  <tr><td>XL</td><td>64</td><td>44</td></tr>
+`;
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    tbody.innerHTML = btn.innerText === "Kid" ? kid : unisex;
+  });
+});
+</script>
+
 <div class="waruturi-wrapper-sleek">
     <div class="cta-card-sleek">
         
@@ -404,4 +406,3 @@ buttons.forEach(btn => {
 
 
 </html>
-
