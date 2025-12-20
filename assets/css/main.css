@@ -777,11 +777,12 @@ section,
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/events/showcase-1.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow: hidden;
+    background: linear-gradient(135deg, rgba(11, 124, 255, 0.50), rgba(0, 182, 219, 0.85)),
+    url('../img/herobendungan.jpeg') center/cover no-repeat !important;
 }
 
 @media (max-width: 768px) {
@@ -6471,10 +6472,11 @@ section,
    FEATURE GRID
 ================================ */
 .feature-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px 18px;
   margin: 20px 0 25px;
+  flex-direction: column;  /* ⬅️ semua item ke bawah */
 }
 
 .feature-item i {
@@ -10132,6 +10134,87 @@ input:focus, select:focus { border-color: #545ae8; box-shadow: 0 0 0 3px rgba(84
   color: rgba(11,27,52,.78);
   font-size: clamp(1.02rem, 1.1vw, 1.08rem);
 }
+/* ========== FIX RESPONSIVE MOBILE (anti foto keluar card) ========== */
+@media (max-width: 820px){
+
+  /* cegah scroll samping akibat elemen melebar */
+  .medal-philosophy,
+  .mp-container,
+  .mp-stack,
+  .mp-row{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* paksa 1 kolom di mobile */
+  .mp-row{
+    grid-template-columns: 1fr !important;
+  }
+
+  /* PENTING: grid item boleh menyusut (biar tidak overflow) */
+  .mp-row > *{
+    min-width: 0;
+  }
+
+  /* media lebih aman: tinggi mengikuti layar, tidak kebesaran */
+  .mp-media{
+    width: 100%;
+    height: auto;              /* override height clamp */
+    aspect-ratio: 16 / 10;     /* sedikit lebih tinggi biar nyaman di HP */
+  }
+
+  /* gambar selalu mengikuti media */
+  .mp-media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* khusus contain: padding diperkecil agar tidak “nabrak” */
+  .mp-media--contain img{
+    padding: 6px;
+  }
+
+  /* padding card sedikit diperkecil di HP */
+  .mp-row{
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .mp-content{
+    padding: 6px 4px;
+  }
+}
+
+/* Extra kecil (HP sempit) */
+@media (max-width: 420px){
+  .mp-media{
+    aspect-ratio: 4 / 3;
+  }
+}
+/* ===== TOPENG FULL TERLIHAT DI MOBILE ===== */
+@media (max-width: 820px){
+
+  /* Container media */
+  .mp-media--contain{
+    height: auto !important;       /* jangan paksa tinggi */
+    aspect-ratio: auto !important; /* biarkan gambar menentukan rasio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  /* Gambar topeng */
+  .mp-media--contain img{
+    width: 100%;
+    height: auto !important;
+    max-height: 280px;             /* batas aman di HP */
+    object-fit: contain !important;
+    padding: 0;                    /* hindari crop tambahan */
+  }
+}
+
 
 /* ============================
    WT CONTACT (Scoped to #wt-contact)
