@@ -100,8 +100,7 @@
     <div class="participant-container">
 
         <div class="alert-box">
-            <strong>Penting:</strong> Batas akhir melengkapi ukuran jersey pada tanggal <strong>31 Januari 2026 pukul 23:59</strong>. 
-            Hanya pembeli tiket yang dapat melakukan perubahan ukuran jersey.
+            <strong>Terimakasih</strong> telah menjadi bagian Waru Turi Fun Run 2026.
         </div>
 
         <div class="controls-row">
@@ -149,29 +148,51 @@
 <script>
     // === DATA DUMMY (Sesuai Gambar + Tambahan) ===
    const rawData = [
-    { name: "Haidar Nur Ridwan", kota: "Jember", size: "XS", cat: "5K" },
-    { name: "Bintang Ramadhan", kota: "Jember", size: "M", cat: "5K" },
-    { name: "Irsyad Fadilah", kota: "Pasuruan", size: "XL", cat: "5K" },
-    { name: "Bagas Agus Priambodo", kota: "Kediri", size: "M", cat: "5K" },
-    { name: "Reihan Budi", kota: "Malang", size: "XXL", cat: "10K" },
-    { name: "Omar Gala Tama", kota: "Malang", size: "M", cat: "10K" },
-    { name: "Mochamad Rafi", kota: "Surabaya", size: "L", cat: "10K" },
-    { name: "Ahmad Zakaria", kota: "Pasuruan", size: "M", cat: "5K" },
-    { name: "Nur Wiwin Karimah", kota: "Kediri", size: "M", cat: "5K" },
-    { name: "wardah Nada Kahitna", kota: "Tuulungagung", size: "L", cat: "5K" },
-    { name: "Reza Fitrah", kota: "Malang", size: "XS", cat: "5K" },
-    { name: "Pandu Satrio Pambudi", kota: "Mojokerto", size: "M", cat: "5K" },
-    { name: "Chandra Aditama", kota: "Nganjuk", size: "S", cat: "5K" },
-    { name: "Affizar", kota: "Jember", size: "XL", cat: "5K" },
-    { name: "Keisya Amanda", kota: "Nganjuk", size: "M", cat: "5K" },
+    { name: "Faizatul Ngazizah", kota: "Kediri", size: "XL", cat: "10K" },
+    { name: "Ananta Dwi Kurniawan", kota: "Kediri", size: "L", cat: "10K" },
+    { name: "Johan Rizky Triosaputra", kota: "Kediri", size: "M", cat: "10K" },
+    { name: "Wanda Adinata", kota: "Kediri", size: "XXL", cat: "10K" },
+    { name: "M.K. Anas", kota: "Kediri", size: "M", cat: "10K" },
+    { name: "Anang Hariadi", kota: "Kediri", size: "XL", cat: "10K" },
+    { name: "Budi Yono", kota: "Kediri", size: "M", cat: "10K" },
+        { name: "Brama Bagus Yuda Kumbara", kota: "Kediri", size: "L", cat: "10K" },
+        { name: "Linda Dwi Maryono", kota: "Kediri", size: "L", cat: "10K" },
+        { name: "Erini Meilina Bestari", kota: "Kediri", size: "XXL", cat: "10K" },
+        { name: "Frengky Firmansyah", kota: "Kediri", size: "XXL", cat: "10K" },
+        { name: "Niswatul Azizah", kota: "Alamat Belum Lengkap", size: "L", cat: "10K" },
+        { name: "Alvian Prio Ratmoko", kota: "Alamat Belum Lengkap", size: "XXL", cat: "10K" },
+        { name: "Winda Fahmi Wahyudin", kota: "Blitar", size: "L", cat: "10K" },
+        { name: "J. Has Majad Dharma Andreano", kota: "Nganjuk", size: "S", cat: "10K" },
+        { name: "Tedy Aditya Akbar", kota: "Alamat Belum Lengkap", size: "M", cat: "10K" },
+        { name: "Muhammad Fath Abdullah", kota: "Alamat Belum Lengkap", size: "M", cat: "10K" },
+        { name: "Ari Prasetyoningsih", kota: "Kediri", size: "M", cat: "10K" },
+
+        { name: "Rendy Lucki Hariyanto", kota: "Kediri", size: "XXL", cat: "5K" },
+        { name: "Ahmad Hasbi Ashidiqi", kota: "Kediri", size: "M", cat: "5K" },
+        { name: "Muhammad Bagus Cahyono", kota: "Kediri", size: "L", cat: "5K" },
+        { name: "Inggit Kusuma", kota: "Kediri", size: "S", cat: "5K" },
+        { name: "Ratna Dewi Adriati Puspitawardani", kota: "Kediri", size: "L", cat: "5K" },
+        { name: "M Alip Ulinnuha", kota: "Kediri", size: "L", cat: "5K" },
+        { name: "Nayla Asyifa Nur Fadhilah", kota: "Kediri", size: "S", cat: "5K" },
+        { name: "Rizki Sandy Putranto", kota: "Kediri", size: "XXL", cat: "5K" },
+        { name: "Aulia Lutfi", kota: "Kediri", size: "M", cat: "5K" },
+        { name: "Iqbal Bangun Wibisono", kota: "Kediri", size: "S", cat: "5K" },
+        { name: "Yuliatin Nasiroh", kota: "Blitar", size: "XXL", cat: "5K" },
+        { name: "Elsa Fitria Nada", kota: "Kediri", size: "XXL", cat: "5K" },
+        { name: "Yuda Aditama", kota: "Kediri", size: "L", cat: "5K" },
+        { name: "Sheilaydp", kota: "Kediri", size: "XL", cat: "5K" },
+        { name: "Wigati Septania", kota: "Nganjuk", size: "XS", cat: "5K" },
+        { name: "Dewi Puspasari", kota: "Kediri", size: "S", cat: "5K" },
+        { name: "Gladis Sidiqia", kota: "Kediri", size: "S", cat: "5K" },
+        { name: "Ahmad Alfan Jauhari", kota: "Kediri", size: "L", cat: "5K" },
+        { name: "Susiati", kota: "Alamat Belum Lengkap", size: "L", cat: "5K" },
+        { name: "Ninik Zulfiati", kota: "Kediri", size: "L", cat: "5K" },
+        { name: "Diva Anandina Rosanti", kota: "Nganjuk", size: "XL", cat: "5K" },
 
     // Data Tambahan
-    { name: "Ardha Saputra", kota: "Blitar", size: "L", cat: "10K" },
-    { name: "Rizal Pratama", kota: "Malang", size: "XL", cat: "10K" },
-    { name: "Ika Aulia", kota: "Kediri", size: "S", cat: "5K" },
-    { name: "Vivian Dewi", kota: "Kediri", size: "L", cat: "5K" },
-    { name: "David Suwarno", kota: "Kediri", size: "XL", cat: "10K" },
-    { name: "Caisar", kota: "Kediri", size: "L", cat: "5K" }
+    { name: "Dedytha Nur Annisa", kota: "Kediri", size: "M", cat: "5K" },
+    { name: "Virga Sanjaya", kota: "Kediri", size: "M", cat: "5K" },
+    { name: "Afita Juni Nurazizah", kota: "Kediri", size: "M", cat: "5K" }
 ];
 
 
@@ -281,7 +302,7 @@
 </div>
 
 <div class="position-fixed end-0 bottom-0 mb-3 me-3 z-3">
-  <a href="https://api.whatsapp.com/send?phone=6285198405846&text=Halo Admin Waru Turi Fun Run"
+  <a href="https://api.whatsapp.com/send?phone=628155257733&text=Halo Admin Waru Turi Fun Run"
      target="_blank"
      title="Hubungi Kami Via WhatsApp"
      class="btn btn-success rounded-circle shadow-lg fab-btn fab-wa">
@@ -296,15 +317,15 @@
             <div class='box'>
                 <p class="tebal normal">Waru Turi Fun Run 2026</p>
                 <p>Bendung Gerak Waruturi, Kediri, Jawa Timur</p>
-                <p><i class="bi bi-telephone-fill"></i> +62 851-9840-5846</p>
-                <p><i class="bi bi-envelope"></i> infowaruturirun@gmail.com</p>
+                <p><i class="bi bi-telephone-fill"></i> +62 815-5257-733</p>
+                <p><i class="bi bi-envelope"></i> officialwaruturirun@gmail.com</p>
             </div>
         </div>
         <div class='kol4 kol-footer'>
             <div class='box'>
                 <p class="tebal normal">Partner & Sponsor</p>
                 <p>Perum Jasa Tirta 1 (PJT 1)</p>
-                <p>Jawapos Radar Kediri</p>
+                <p>Jawa Pos Radar Kediri</p>
                 <p>Bendung Gerak Waruturi</p>
                 <p>R-Project Event Organizer</p>
             </div>
@@ -316,6 +337,7 @@
                 <p><a href="race.html" class="putih">Informasi</a></p>
                 <p><a href="ticket.html" class="putih">Pendaftaran</a></p>
                 <p><a href="regulasi.html" class="putih">Regulasi</a></p>
+                <p><a href="kontak.html" class="putih">Kontak</a></p>
             </div>
         </div>
         <div class='kol-14 teks-kanan kol-footer'>
@@ -343,5 +365,6 @@
 
 
 </html>
+
 
 
