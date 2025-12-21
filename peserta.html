@@ -40,6 +40,16 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQQWGJ80Y7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQQWGJ80Y7');
+</script>
+
 </head>
 
 <body class="index-page">
@@ -188,17 +198,31 @@
         { name: "Susiati", kota: "Alamat Belum Lengkap", size: "L", cat: "5K" },
         { name: "Ninik Zulfiati", kota: "Kediri", size: "L", cat: "5K" },
         { name: "Diva Anandina Rosanti", kota: "Nganjuk", size: "XL", cat: "5K" },
-
-    // Data Tambahan
-    { name: "Dedytha Nur Annisa", kota: "Kediri", size: "M", cat: "5K" },
+        { name: "Dedytha Nur Annisa", kota: "Kediri", size: "M", cat: "5K" },
     { name: "Virga Sanjaya", kota: "Kediri", size: "M", cat: "5K" },
     { name: "Afita Juni Nurazizah", kota: "Kediri", size: "M", cat: "5K" }
+    { name: "Roni Yusuf", kota: "Kediri", size: "XL", cat: "10K" },
+
+    // Data Tambahan
+    
+    { name: "Ika Nur Afni Yulia Safitri", kota: "Kediri", size: "M", cat: "5K" },
+    { name: "Yulianti Khoirun Nisa", kota: "Kediri", size: "L", cat: "5K" },
+    { name: "Mohamad Chrisan Friendiza", kota: "Kediri", size: "L", cat: "5K" },
+    { name: "Alvito", kota: "Nganjuk", size: "M", cat: "5K" },
+    { name: "Triffit Imasari", kota: "Kediri", size: "XL", cat: "5K" },
+    { name: "Mardiyah Latifah Khoiriyah", kota: "Belum isi Alamat", size: "S", cat: "5K" },
+    { name: "Mei Andayani", kota: "Kediri", size: "XL", cat: "5K" },
+    { name: "Gilang Pandhu Wijaya", kota: "Nganjuk", size: "M", cat: "5K" },
+    { name: "Nanda Rivat Cahya Dinullah", kota: "Belum isi Alamat", size: "L", cat: "5K" },
+    { name: "Sugeng Prayetno", kota: "Belum isi Alamat", size: "M", cat: "5K" },
+    { name: "Tiara Agtaviani", kota: "Kediri", size: "S", cat: "5K" },
+    { name: "Raihan Iqbal Tawakal", kota: "Kediri", size: "L", cat: "5K" },
 ];
 
 
     // Variables
     let currentPage = 1;
-    const rowsPerPage = 10;
+    const rowsPerPage = 25;
     let filteredData = [...rawData];
 
     // Elements
@@ -365,6 +389,3 @@
 
 
 </html>
-
-
-
