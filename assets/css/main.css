@@ -853,8 +853,8 @@ section,
   background-size: cover;
   /* Menggabungkan gradient transparan dengan gambar background */
   background: linear-gradient(
-    rgba(124, 37, 186, 0.85), /* Ungu Kediri Event dengan opasitas 85% di atas */
-    rgba(124, 37, 186, 0.95)  /* Ungu Kediri Event dengan opasitas 95% di bawah */
+    rgba(124, 37, 186, 0.70), /* Ungu Kediri Event dengan opasitas 85% di atas */
+    rgba(124, 37, 186, 0.70)  /* Ungu Kediri Event dengan opasitas 95% di bawah */
   ), url('../img/landscape.webp') !important; /* Sesuaikan nama/path gambar Anda */
   
   background-size: cover !important; /* Memastikan gambar menutupi seluruh area */
@@ -2409,8 +2409,6 @@ section,
 }
 
 .trust-item:hover .icon-box {
-  background-color: var(--surface-color); /* Warna ikon berubah saat di-hover */
-  color: var(--contrast-color);
   transform: scale(1.1);
 }
 
