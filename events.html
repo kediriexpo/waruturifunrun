@@ -12,11 +12,12 @@
   <link rel="canonical" href="https://kedirievent.com/events.html">
 
   <!-- Favicons - Complete Set -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo2 square.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo2 square.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo2 square.png">
-  <link rel="shortcut icon" href="assets/img/logo2 square.png">
-  <meta name="msapplication-TileImage" content="assets/img/logo2 square.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo2%20square.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo2%20square.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo2%20square.png">
+  <link rel="shortcut icon" href="assets/img/logo2%20square.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileImage" content="assets/img/logo2%20square.png">
   <meta name="msapplication-TileColor" content="#6f42c1">
   <meta name="theme-color" content="#6f42c1">
 
@@ -105,12 +106,12 @@
 
   <main class="main">
 
-    <div class="page-title text-center" style="background-color: #f9f9fa; padding: 120px 0 60px 0;">
-      <div class="container" data-aos="fade-up">
-        <h1 class="display-5 fw-bold mb-3" style="color: #7c25ba;">Temukan Event Seru di Kediri</h1>
-        <p class="text-muted fs-5">Eksplorasi ribuan acara, mulai dari konser musik, festival kuliner, hingga petualangan alam akhir pekan.</p>
-      </div>
+  <div class="page-title text-center" style="background-color: #f9f9fa; padding: 120px 0 60px 0;">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-5 fw-bold mb-3" style="color: #7c25ba;">Temukan Event Seru di Kediri</h1>
+      <p class="text-muted fs-5">Eksplorasi ribuan acara, mulai dari konser musik, festival kuliner, hingga petualangan alam akhir pekan.</p>
     </div>
+  </div>
     
 <section id="catalog" class="catalog section pb-5">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -180,6 +181,7 @@
               <label class="form-label small fw-bold text-muted">Bulan</label>
               <select id="monthFilter" class="form-select custom-select focus-none">
                 <option value="all">Semua Bulan</option>
+                <option value="03">Maret</option>
                 <option value="05">Mei</option>
                 <option value="06">Juni</option>
                 <option value="07">Juli</option>
@@ -200,10 +202,29 @@
 
         <div class="row gy-4" id="event-grid">
 
+          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="pendidikan" data-price="above_100k" data-date="2026-03-15" data-title="Program Scholarship Camp Global English">
+            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;" onclick="window.open('https://globalenglish.co.id/scholarship-camp/', '_blank');">
+              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
+                <img src="assets/img/Program Scholarship Camp Global English Pare.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Scholarship Camp Global English" onerror="this.src='assets/img/blog/blog-1.jpg'">
+                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #0dcaf0;">Mulai Rp 500k</span>
+                <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"><i class="bi bi-star-fill me-1"></i>Pendidikan</span>
+              </div>
+              <div class="p-4 flex-grow-1 d-flex flex-column">
+                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Beasiswa</span>
+                <h3 class="fs-5 fw-bold mb-3 event-card-title">Program Scholarship Camp Global English</h3>
+                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Kampung Inggris, Pare</p>
+                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 15 Mar</span>
+                  <span class="small fw-bold d-flex align-items-center text-info">Detail Web <i class="bi bi-box-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+            </article>
+          </div>
+
           <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="pendidikan" data-price="above_100k" data-date="2026-06-15" data-title="Program Holiday Global English Pare">
             <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;" onclick="window.open('https://globalenglish.co.id/', '_blank');">
               <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/globalenglishpare.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Global English Pare">
+                <img src="assets/img/globalenglishpare.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Global English Pare" onerror="this.src='assets/img/blog/blog-1.jpg'">
                 <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #0dcaf0;">Mulai Rp 500k</span>
                 <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"><i class="bi bi-star-fill me-1"></i>Pendidikan</span>
               </div>
@@ -327,7 +348,7 @@
             </article>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="selesai" data-category="outbound" data-price="under_100k" data-date="2026-03-01" data-title="Waruturi Fun Run">
+          <div class="col-md-6 col-lg-4 event-item" data-status="selesai" data-category="outbound" data-price="under_100k" data-date="2026-02-15" data-title="Waruturi Fun Run">
             <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;" onclick="location.href='waruturirun.html';">
               <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
                 <img src="assets/img/waruturifunrun.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Waruturi Fun Run">
@@ -434,7 +455,6 @@
 
         if (matchSearch && matchCategory && matchPrice && matchMonth && matchStatus && !isExtraAndNotLoaded) {
           card.classList.remove('d-none');
-          // Update JS agar tidak memunculkan logic opacity-75 lagi, langsung opacity 1.
           setTimeout(() => { card.style.opacity = '1'; }, 10);
           visibleCount++;
         } else {
@@ -498,7 +518,7 @@
   });
 </script>
 
-  </main>
+</main>
 
   <footer id="footer" class="footer accent-background">
     <div class="container footer-top">
