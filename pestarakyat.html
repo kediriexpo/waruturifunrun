@@ -9,7 +9,9 @@
   <meta name="keywords" content="pesta rakyat SLG, konser rakyat kediri, hiburan rakyat kediri, event SLG kediri">
   <meta name="author" content="Kediri Event">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://kedirievent.com/pestarakyat.html">
+  
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://kedirievent.com/pestarakyat.html">
 
   <!-- Favicons - Complete Set -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo2 square.png">
@@ -77,6 +79,27 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Konser Pesta Rakyat SLG - Hiburan Rakyat Kediri | Kediri Event",
+    "description": "Konser Pesta Rakyat di Simpang Lima Gumul Kediri. Hiburan rakyat dengan artis nasional, wahana hiburan, dan kuliner malam di area SLG.",
+    "url": "https://kedirievent.com/pestarakyat.html",
+    "inLanguage": "id-ID",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Kediri Event",
+      "url": "https://kedirievent.com/"
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://kedirievent.com/assets/img/museum.webp"
+    }
+  }
+  </script>
+
 </head>
 
 <body class="portfolio-details-page">
@@ -84,8 +107,8 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="">
+      <a href="index.html" class="logo d-flex align-items-center me-auto" aria-label="Kediri Event home">
+        <img src="assets/img/logo.png" alt="Kediri Event" loading="eager" decoding="async">
         <h1 class="sitename">Techie</h1>
       </a>
 
@@ -191,10 +214,10 @@
 
             <div class="row g-3 my-4">
               <div class="col-md-6">
-                <img src="assets/img/museum.webp" class="img-fluid rounded-4 shadow-sm w-100" style="aspect-ratio: 4/3; object-fit: cover;" alt="Keseruan Konser Ambyar Kediri">
+                <img src="assets/img/museum.webp" class="img-fluid rounded-4 shadow-sm w-100" style="aspect-ratio: 4/3; object-fit: cover;" alt="Keseruan Konser Ambyar Kediri" loading="lazy" decoding="async">
               </div>
               <div class="col-md-6">
-                <img src="assets/img/museum.webp" class="img-fluid rounded-4 shadow-sm w-100" style="aspect-ratio: 4/3; object-fit: cover;" alt="Bazaar UMKM Konser">
+                <img src="assets/img/museum.webp" class="img-fluid rounded-4 shadow-sm w-100" style="aspect-ratio: 4/3; object-fit: cover;" alt="Bazaar UMKM Konser" loading="lazy" decoding="async">
               </div>
             </div>
 
@@ -327,7 +350,9 @@
           if(radio.checked) {
             price = parseInt(radio.getAttribute('data-price'));
             // Update border aktif
-            ticketBoxes.forEach(box => box.classList.remove('active-border'));
+            ticketBoxes.forEach((box) => {
+              box.classList.remove('active-border');
+            });
             radio.closest('.ticket-type').classList.add('active-border');
             
             // Khusus event konser ambyar, kita beri sentuhan warna merah pada border aktif
@@ -344,7 +369,9 @@
         totalPriceDisplay.textContent = formatRupiah(total);
       }
 
-      radios.forEach(radio => radio.addEventListener('change', calculateTotal));
+      radios.forEach((radio) => {
+        radio.addEventListener('change', calculateTotal);
+      });
 
       // Logika Plus Minus (Batas Maksimal 5 tiket per transaksi untuk meminimalisir calo)
       btnMinus.addEventListener('click', () => {
@@ -415,7 +442,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center" aria-label="Kediri Event home">
             <span class="sitename">Kediri Event</span>
           </a>
           <p>Platform pusat informasi dan pemesanan tiket event, konser, dan hiburan nomor satu di wilayah Kota dan Kabupaten Kediri.</p>
@@ -427,10 +454,10 @@
           <p class="mt-4"><strong>WhatsApp:</strong> <span>+62 895-6390-68080</span></p>
           <p><strong>Email:</strong> <span>radarkediritelevisi@gmail.com</span></p>
           <div class="social-links d-flex mt-4">
-            <a href="https://twitter.com/jpradarkediri/"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/jawaposradarkediri/"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/radarkediri/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/radarkediritv"><i class="bi bi-youtube"></i></a>
+            <a href="https://twitter.com/jpradarkediri/" aria-label="Twitter Radar Kediri"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/jawaposradarkediri/" aria-label="Facebook Radar Kediri"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/radarkediri/" aria-label="Instagram Radar Kediri"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/radarkediritv" aria-label="YouTube Radar Kediri"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
@@ -459,13 +486,13 @@
   <h4>Networking</h4>
   <ul style="list-style: none; padding-left: 0;">
     <li class="mb-2">
-      <a href="https://www.waruturirun.com/" target="_blank">Waruturirun</a>
+      <a href="https://www.waruturirun.com/" target="_blank" rel="noopener noreferrer">Waruturirun</a>
     </li>
     <li class="mb-2">
-      <a href="https://www.kampunginggrispare.web.id/" target="_blank">Kampung Inggris Pare</a>
+      <a href="https://www.kampunginggrispare.web.id/" target="_blank" rel="noopener noreferrer">Kampung Inggris Pare</a>
     </li>
     <li class="mb-2">
-      <a href="https://www.kediriproperti.id/" target="_blank">Kediri Properti</a>
+      <a href="https://www.kediriproperti.id/" target="_blank" rel="noopener noreferrer">Kediri Properti</a>
     </li>
   </ul>
 </div>
@@ -477,24 +504,19 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/62895639068080?text=Halo%20Admin%20Kediri%20Event,%20saya%20ingin%20bertanya%20seputar%20event..." target="_blank" class="floating-wa" title="Hubungi Kami via WhatsApp">
-  <i class="bi bi-whatsapp"></i>
-</a>
+  <a href="https://wa.me/62895639068080?text=Halo%20Admin%20Kediri%20Event,%20saya%20ingin%20bertanya%20seputar%20event..." target="_blank" class="floating-wa" title="Hubungi Kami via WhatsApp" rel="noopener noreferrer" aria-label="Hubungi Kediri Event via WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="background-color: #7c25ba;"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="background-color: #7c25ba;" aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short"></i></a>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
 
-  <div id="preloader"></div>
-
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 </html>

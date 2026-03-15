@@ -11,7 +11,9 @@
     content="pendaftaran fun run kediri, registrasi waru turi fun run, daftar lari 5K kediri, daftar lari 10K kediri, form pendaftaran fun run 2026, event lari kediri 2026, lomba lari waruturi kediri">
   <meta name="author" content="Kediri Event">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://kedirievent.com/waruturirun-registrasi.html">
+  
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="referrer" content="strict-origin-when-cross-origin"><link rel="canonical" href="https://kedirievent.com/waruturirun-registrasi.html">
 
   <!-- DNS Prefetch & Preconnect for Page Speed -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -196,6 +198,27 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Pendaftaran Waru Turi Fun Run 2026 - Form Registrasi Online | Kediri Event",
+    "description": "Daftar sekarang Waru Turi Fun Run 2026 di Bendung Gerak Waruturi Kediri. Formulir pendaftaran online kategori 5K &amp; 10K. Dapatkan jersey eksklusif, medali finisher, dan goodie bag. Kuota terbatas!",
+    "url": "https://kedirievent.com/waruturirun-registrasi.html",
+    "inLanguage": "id-ID",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Kediri Event",
+      "url": "https://kedirievent.com/"
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://kedirievent.com/assets/img/waruturifunrun.webp"
+    }
+  }
+  </script>
+
 </head>
 
 <body class="portfolio-details-page">
@@ -203,9 +226,9 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center me-auto" aria-label="Kediri Event home">
         <img src="assets/img/logo3.png" alt="Kediri Event - Platform Event Terlengkap di Kediri" width="150"
-          height="40">
+          height="40" loading="eager" decoding="async">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -552,7 +575,9 @@
             catName = radio.value;
 
             // Styling border box yang aktif
-            ticketBoxes.forEach(box => box.classList.remove('active-border'));
+            ticketBoxes.forEach((box) => {
+              box.classList.remove('active-border');
+            });
             radio.closest('.ticket-type').classList.add('active-border');
           }
         });
@@ -562,7 +587,9 @@
         totalTagihan.textContent = formatRupiah(price);
       }
 
-      categoryRadios.forEach(radio => radio.addEventListener('change', calculateTotal));
+      categoryRadios.forEach((radio) => {
+        radio.addEventListener('change', calculateTotal);
+      });
 
 
       // --- 2. LOGIKA VALIDASI FORM & REDIRECT WHATSAPP ---
@@ -644,7 +671,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center" aria-label="Kediri Event home">
             <span class="sitename">Kediri Event</span>
           </a>
           <p>Platform pusat informasi dan pemesanan tiket event, konser, dan hiburan nomor satu di wilayah Kota dan Kabupaten Kediri.</p>
@@ -656,10 +683,10 @@
           <p class="mt-4"><strong>WhatsApp:</strong> <span>+62 895-6390-68080</span></p>
           <p><strong>Email:</strong> <span>radarkediritelevisi@gmail.com</span></p>
           <div class="social-links d-flex mt-4">
-            <a href="https://twitter.com/jpradarkediri/"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/jawaposradarkediri/"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/radarkediri/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/radarkediritv"><i class="bi bi-youtube"></i></a>
+            <a href="https://twitter.com/jpradarkediri/" aria-label="Twitter Radar Kediri"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/jawaposradarkediri/" aria-label="Facebook Radar Kediri"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/radarkediri/" aria-label="Instagram Radar Kediri"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/radarkediritv" aria-label="YouTube Radar Kediri"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
@@ -688,13 +715,13 @@
   <h4>Networking</h4>
   <ul style="list-style: none; padding-left: 0;">
     <li class="mb-2">
-      <a href="https://www.waruturirun.com/" target="_blank">Waruturirun</a>
+      <a href="https://www.waruturirun.com/" target="_blank" rel="noopener noreferrer">Waruturirun</a>
     </li>
     <li class="mb-2">
-      <a href="https://www.kampunginggrispare.web.id/" target="_blank">Kampung Inggris Pare</a>
+      <a href="https://www.kampunginggrispare.web.id/" target="_blank" rel="noopener noreferrer">Kampung Inggris Pare</a>
     </li>
     <li class="mb-2">
-      <a href="https://www.kediriproperti.id/" target="_blank">Kediri Properti</a>
+      <a href="https://www.kediriproperti.id/" target="_blank" rel="noopener noreferrer">Kediri Properti</a>
     </li>
   </ul>
 </div>
@@ -707,25 +734,20 @@
   </footer>
 
   <a href="https://wa.me/62895639068080?text=Halo%20Admin%20Kediri%20Event,%20saya%20ingin%20bertanya%20seputar%20event..."
-    target="_blank" class="floating-wa" title="Hubungi Kami via WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-  </a>
+    target="_blank" class="floating-wa" title="Hubungi Kami via WhatsApp" rel="noopener noreferrer" aria-label="Hubungi Kediri Event via WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
-    style="background-color: #7c25ba;"><i class="bi bi-arrow-up-short"></i></a>
+    style="background-color: #7c25ba;" aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short"></i></a>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
 
-  <div id="preloader"></div>
-
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
