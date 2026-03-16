@@ -128,8 +128,8 @@
 
     <div class="page-title text-center" style="background-color: #f9f9fa; padding: 120px 0 60px 0;">
       <div class="container" data-aos="fade-up">
-        <h1 class="display-5 fw-bold mb-3" style="color: #7c25ba;">Temukan Event Seru di Kediri</h1>
-        <p class="text-muted fs-5">Eksplorasi ribuan acara, mulai dari konser musik, festival kuliner, hingga petualangan alam akhir pekan.</p>
+        <h1 class="display-5 fw-bold mb-3" style="color: #7c25ba;">Katalog Event Kediri</h1>
+        <p class="text-muted fs-5 mx-auto" style="max-width: 700px;">Eksplorasi rekam jejak ribuan acara kami, mulai dari kompetisi pelajar, konser musik, hingga pelatihan edukasi berskala nasional.</p>
       </div>
     </div>
     
@@ -171,15 +171,11 @@
               </div>
               <div class="form-check custom-check mb-2">
                 <input class="form-check-input filter-category" type="radio" name="category" id="cat-konser" value="konser">
-                <label class="form-check-label" for="cat-konser">Konser & Hiburan</label>
+                <label class="form-check-label" for="cat-konser">Konser & Esport</label>
               </div>
               <div class="form-check custom-check mb-2">
                 <input class="form-check-input filter-category" type="radio" name="category" id="cat-outbound" value="outbound">
-                <label class="form-check-label" for="cat-outbound">Outbound & Petualangan</label>
-              </div>
-              <div class="form-check custom-check mb-2">
-                <input class="form-check-input filter-category" type="radio" name="category" id="cat-kuliner" value="kuliner">
-                <label class="form-check-label" for="cat-kuliner">Festival Kuliner</label>
+                <label class="form-check-label" for="cat-outbound">Outbound & Olahraga</label>
               </div>
               <div class="form-check custom-check mb-2">
                 <input class="form-check-input filter-category" type="radio" name="category" id="cat-pendidikan" value="pendidikan">
@@ -188,23 +184,17 @@
             </div>
 
             <div class="mb-4">
-              <label class="form-label small fw-bold text-muted">Harga Tiket</label>
-              <select id="priceFilter" class="form-select custom-select focus-none">
-                <option value="all">Semua Harga</option>
-                <option value="gratis">Gratis</option>
-                <option value="under_100k">Di bawah Rp 100.000</option>
-                <option value="above_100k">Di atas Rp 100.000</option>
-              </select>
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label small fw-bold text-muted">Bulan</label>
+              <label class="form-label small fw-bold text-muted">Bulan Pelaksanaan</label>
               <select id="monthFilter" class="form-select custom-select focus-none">
                 <option value="all">Semua Bulan</option>
-                <option value="05">Mei</option>
+                <option value="02">Februari</option>
+                <option value="03">Maret</option>
                 <option value="06">Juni</option>
                 <option value="07">Juli</option>
                 <option value="08">Agustus</option>
+                <option value="09">September</option>
+                <option value="10">Oktober</option>
+                <option value="12">Desember</option>
               </select>
             </div>
 
@@ -221,167 +211,256 @@
 
         <div class="row gy-4" id="event-grid">
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="pendidikan" data-price="above_100k" data-date="2026-06-15" data-title="Program Holiday Global English Pare">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;" onclick="window.open('https://globalenglish.co.id/', '_blank');">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/globalenglishpare.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Global English Pare" width="800" height="600" loading="eager" fetchpriority="high" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #0dcaf0;">Mulai Rp 500k</span>
-                <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"><i class="bi bi-star-fill me-1"></i>Pendidikan</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="pendidikan" data-date="2026-03-15" data-title="Program Scholarship Camp Global English">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/globalenglishpare.webp" class="w-100 h-100 object-fit-cover" alt="Scholarship Camp" loading="lazy" onerror="this.src='assets/img/blog/blog-1.jpg'">
+                <span class="badge position-absolute top-0 end-0 m-2" style="background-color: #0dcaf0;">Aktif</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Pelatihan Bahasa</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Program Holiday Global English Pare</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Kampung Inggris, Pare</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 15 Jun</span>
-                  <span class="small fw-bold d-flex align-items-center text-info">Kunjungi Web <i class="bi bi-box-arrow-up-right ms-1"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Program Scholarship Camp Global English</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>15 Mar 2026</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Kampung Inggris, Pare</span>
                 </div>
+                <a href="program-scholarship-camp-global-english.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="konser" data-price="above_100k" data-date="2026-05-10" data-title="Dhoho Indie Music Festival" onclick="location.href='musicfestival.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/konsermegah.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Dhoho Indie" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 150k</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="pendidikan" data-date="2026-06-15" data-title="Program Holiday Global English Pare">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/globalenglishpare.webp" class="w-100 h-100 object-fit-cover" alt="Holiday Global English" loading="lazy" onerror="this.src='assets/img/blog/blog-1.jpg'">
+                <span class="badge position-absolute top-0 end-0 m-2" style="background-color: #0dcaf0;">Aktif</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Konser</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Dhoho Indie Music Festival 2026</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Area SLG Kediri</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 10 Mei</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Program Holiday Global English Pare</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>15 Jun 2026</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Kampung Inggris, Pare</span>
                 </div>
+                <a href="program-holiday-global-english.html" target="_blank" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="outbound" data-price="above_100k" data-date="2026-05-15" data-title="Jelajah Off-Road Lereng Kelud" onclick="location.href='offroadkelud.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/offroad.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Offroad Kelud" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 250k/pax</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="selesai" data-category="outbound" data-date="2026-02-15" data-title="Waruturi Fun Run 5K & 10K">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/waruturifunrun.webp" class="w-100 h-100 object-fit-cover" alt="Waruturi Fun Run" loading="lazy" onerror="this.src='assets/img/blog/blog-4.jpg'">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Selesai</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Outbound</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Jelajah Off-Road Lereng Kelud</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Wisata Gunung Kelud</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 15 Mei</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Olahraga</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Waruturi Fun Run 5K & 10K</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>15 Feb 2026</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Bendung Gerak Waruturi</span>
                 </div>
+                <a href="waruturirun.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="kuliner" data-price="gratis" data-date="2026-05-20" data-title="Festival Tahu Takwa Nusantara" onclick="location.href='festivalkulinertahu.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/kulinermalam.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Festival Tahu" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge bg-success position-absolute top-0 end-0 m-3">Gratis</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="selesai" data-category="pendidikan" data-date="2024-09-26" data-title="Pelatihan Digital Marketing 2024">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/pelatihan1_3_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Pelatihan Digital Marketing" loading="lazy">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Selesai</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Kuliner</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Festival Tahu Takwa Nusantara</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Taman Sekartaji</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 20 Mei</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Pelatihan Digital Marketing 2024</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>26 Sep 2024</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Jawa Pos Radar Kediri</span>
                 </div>
+                <a href="detail-pelatihan-digital.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="konser" data-price="under_100k" data-date="2026-06-01" data-title="Akustik Senja Taman Brantas" onclick="location.href='akustik.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/manasikhaji.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Akustik Senja" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 35k</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="selesai" data-category="pendidikan" data-date="2023-12-18" data-title="Forum Literasi Keuangan 2023">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/pelatihan2_2_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Forum Literasi" loading="lazy">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Selesai</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Konser</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Akustik Senja Taman Brantas</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Taman Brantas Kediri</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 01 Jun</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Forum Literasi Keuangan 2023</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>18 Des 2023</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Hotel Nirwana Nganjuk</span>
                 </div>
+                <a href="detail-forum-literasi.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="outbound" data-price="above_100k" data-date="2026-06-12" data-title="Family Gathering Outbound Bukit Dhoho" onclick="location.href='outbound.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/outboundtariktambang.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Outbound Bukit Dhoho" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 120k/pax</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="selesai" data-category="pendidikan" data-date="2023-12-06" data-title="Content Creator Class UMM JPRK 2023">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/pelatihan3_1_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Content Creator" loading="lazy">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Selesai</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Outbound</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Family Gathering Bukit Dhoho Indah</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> BDI Banyakan</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 12 Jun</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Content Creator Class UMM JPRK 2023</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>06 Des 2023</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Aula Jawa Pos Radar Kediri</span>
                 </div>
+                <a href="detail-content-creator.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="kuliner" data-price="under_100k" data-date="2026-06-20" data-title="Pesta Durian Slumbung" onclick="location.href='duriankuliner.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/kulinermalam.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Pesta Durian" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Mulai Rp 50k</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="konser" data-date="2025-10-04" data-title="Kediri Fashion Batik Festival">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/event-terdekat1_8_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Kediri Fashion Batik" loading="lazy">
+                <span class="badge position-absolute top-0 end-0 m-2" style="background-color: #0dcaf0;">Aktif</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Kuliner</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Pesta Durian Desa Slumbung</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Ngadiluwih, Kediri</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 20 Jun</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Konser & Hiburan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Kediri Fashion Batik Festival</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>04 Okt 2025</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Simpang Lima Gumul</span>
                 </div>
+                <a href="detail-fashion-batik.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item" data-status="selesai" data-category="outbound" data-price="under_100k" data-date="2026-03-01" data-title="Waruturi Fun Run">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;" onclick="location.href='waruturirun.html';">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/waruturifunrun.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Waruturi Fun Run" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge bg-danger position-absolute top-0 end-0 m-3">Selesai</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="pendidikan" data-date="2025-09-12" data-title="School Contest 2025">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/event-terdekat2_7_11zon.webp" class="w-100 h-100 object-fit-cover" alt="School Contest 2025" loading="lazy">
+                <span class="badge position-absolute top-0 end-0 m-2" style="background-color: #0dcaf0;">Aktif</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Olahraga & Lari</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Waruturi Fun Run 5K</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Bendung Gerak Waruturi</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 15 Feb</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Lihat Event <i class="bi bi-arrow-right-short fs-5"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">School Contest 2025</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>12 Sep 2025</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Convention Hall SLG</span>
                 </div>
+                <a href="detail-school-contest.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 event-item extra-card d-none" data-status="aktif" data-category="konser" data-price="above_100k" data-date="2026-07-05" data-title="Konser Pesta Rakyat SLG" onclick="location.href='pestarakyat.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/museum.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Pesta Rakyat" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 100k</span>
+          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="konser" data-date="2024-07-19" data-title="SC FreeFire Battle">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/sport1_6_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Freefire Battle" loading="lazy">
+                <span class="badge position-absolute top-0 end-0 m-2" style="background-color: #0dcaf0;">Aktif</span>
               </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Konser</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Konser Pesta Rakyat SLG</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Simpang Lima Gumul</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 05 Jul</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Esport</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">SC FreeFire Battle 2024-Present</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>19 Jul 2024</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Convention Hall SLG</span>
                 </div>
+                <a href="detail-freefire-battle.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
               </div>
-            </article>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 event-item extra-card d-none" data-status="selesai" data-category="outbound" data-date="2024-07-07" data-title="Fun Walk Nganjuk">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/sport2_5_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Fun Walk Nganjuk" loading="lazy">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Selesai</span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Olahraga</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Fun Walk Nganjuk 2024</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>07 Jul 2024</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Alun Alun Kab. Nganjuk</span>
+                </div>
+                <a href="detail-fun-walk-nganjuk.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 event-item extra-card d-none" data-status="aktif" data-category="konser" data-date="2022-09-16" data-title="SC Cup Mobile Legends">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/sport3_4_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Mobile Legends" loading="lazy">
+                <span class="badge position-absolute top-0 end-0 m-2" style="background-color: #0dcaf0;">Aktif</span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Esport</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">SC Cup Mobile Legends 2022-Present</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>16 Sep 2022</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Convention Hall SLG</span>
+                </div>
+                <a href="detail-mobile-legends.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 event-item extra-card d-none" data-status="selesai" data-category="pendidikan" data-date="2024-12-06" data-title="Lomba Desain Poster Dinas Perikanan">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/school1_11_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Lomba Poster" loading="lazy">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Selesai</span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Lomba Desain Poster Dinas Perikanan</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>06 Des 2024</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Hall Jawa Pos Radar Kediri</span>
+                </div>
+                <a href="detail-lomba-poster.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 event-item extra-card d-none" data-status="selesai" data-category="pendidikan" data-date="2024-08-24" data-title="Sekolah Peduli Inflasi 2024">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/school2_10_11zon.webp" class="w-100 h-100 object-fit-cover" alt="Sekolah Peduli Inflasi" loading="lazy">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Selesai</span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">Sekolah Peduli Inflasi 2024</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>24 Agu 2024</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Kota Kediri</span>
+                </div>
+                <a href="detail-sekolah-inflasi.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 event-item extra-card d-none" data-status="selesai" data-category="pendidikan" data-date="2024-07-19" data-title="School Contest 2024">
+            <div class="card h-100 border-0 rounded-4 shadow-sm custom-portfolio-card d-flex flex-column p-2">
+              <div class="position-relative overflow-hidden rounded-top-4" style="height: 180px;">
+                <img src="assets/img/school3_9_11zon.webp" class="w-100 h-100 object-fit-cover" alt="School Contest 2024" loading="lazy">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Selesai</span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <span class="badge bg-light text-secondary border rounded-pill mb-3 align-self-start fw-medium"><i class="bi bi-tag-fill me-1" style="color: #7c25ba;"></i>Pendidikan</span>
+                <h3 class="fw-bold fs-6 text-dark mb-3 event-card-title">School Contest 2024</h3>
+                <div class="d-flex flex-column gap-2 mb-4 mt-auto">
+                  <span class="text-muted small"><i class="bi bi-calendar-event me-2" style="color: #7c25ba;"></i>19 Jul 2024</span>
+                  <span class="text-muted small"><i class="bi bi-geo-alt-fill me-2" style="color: #7c25ba;"></i>Convention Hall SLG</span>
+                </div>
+                <a href="detail-school-contest-2024.html" class="btn w-100 text-white fw-bold rounded-3 py-2" style="background-color: #5a1a8c;">Lihat Detail</a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -404,23 +483,38 @@
   </div>
 </section>
 
+<style>
+  /* --- Style Hover Khusus Katalog --- */
+  .custom-portfolio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .custom-portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(90, 26, 140, 0.15) !important;
+  }
+  .custom-portfolio-card img {
+    transition: transform 0.5s ease;
+  }
+  .custom-portfolio-card:hover img {
+    transform: scale(1.05);
+  }
+  .btn:hover { opacity: 0.9; }
+</style>
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     
     const searchInput = document.getElementById('searchInput');
     const categoryRadios = document.querySelectorAll('.filter-category');
-    const priceSelect = document.getElementById('priceFilter');
+    // Menghapus penggunaan filter harga karena diganti dengan badge manual
     const monthSelect = document.getElementById('monthFilter');
     const statusSelect = document.getElementById('statusFilter');
     
     const eventCards = document.querySelectorAll('.event-item'); 
-    const extraCards = document.querySelectorAll('.extra-card'); 
-    
     const resultCountTxt = document.getElementById('resultCount');
     const noResultsMsg = document.getElementById('no-results');
     const resetBtn = document.getElementById('resetBtn');
     const btnResetEmpty = document.getElementById('btnResetEmpty');
-    
     const btnLoadMore = document.getElementById('btnLoadMore');
     const loadMoreContainer = document.getElementById('load-more-container');
     const loadMoreIcon = document.getElementById('loadMoreIcon');
@@ -431,7 +525,6 @@
     const filterEvents = () => {
       const searchTerm = searchInput.value.toLowerCase();
       const activeCategory = document.querySelector('.filter-category:checked').value;
-      const activePrice = priceSelect.value;
       const activeMonth = monthSelect.value;
       const activeStatus = statusSelect.value; 
 
@@ -440,20 +533,18 @@
       eventCards.forEach((card) => {
         const title = card.getAttribute('data-title').toLowerCase();
         const category = card.getAttribute('data-category');
-        const price = card.getAttribute('data-price');
         const status = card.getAttribute('data-status'); 
         const date = card.getAttribute('data-date'); 
         const cardMonth = date.split('-')[1]; 
 
         const matchSearch = title.includes(searchTerm);
         const matchCategory = (activeCategory === 'all' || activeCategory === category);
-        const matchPrice = (activePrice === 'all' || activePrice === price);
         const matchMonth = (activeMonth === 'all' || activeMonth === cardMonth);
         const matchStatus = (activeStatus === 'all' || activeStatus === status);
 
         const isExtraAndNotLoaded = card.classList.contains('extra-card') && !isLoadMoreClicked;
 
-        if (matchSearch && matchCategory && matchPrice && matchMonth && matchStatus && !isExtraAndNotLoaded) {
+        if (matchSearch && matchCategory && matchMonth && matchStatus && !isExtraAndNotLoaded) {
           card.classList.remove('d-none');
           card.style.opacity = '1';
           visibleCount++;
@@ -470,7 +561,7 @@
         loadMoreContainer.classList.add('d-none');
       } else {
         noResultsMsg.classList.add('d-none');
-        if (searchTerm !== '' || activeCategory !== 'all' || activePrice !== 'all' || activeMonth !== 'all' || activeStatus !== 'aktif' || isLoadMoreClicked) {
+        if (searchTerm !== '' || activeCategory !== 'all' || activeMonth !== 'all' || activeStatus !== 'all' || isLoadMoreClicked) {
             loadMoreContainer.classList.add('d-none');
         } else {
             loadMoreContainer.classList.remove('d-none');
@@ -482,10 +573,7 @@
       clearTimeout(searchTimeout);
       searchTimeout = setTimeout(filterEvents, 120);
     });
-    categoryRadios.forEach((radio) => {
-      radio.addEventListener('change', filterEvents);
-    });
-    priceSelect.addEventListener('change', filterEvents);
+    categoryRadios.forEach((radio) => radio.addEventListener('change', filterEvents));
     monthSelect.addEventListener('change', filterEvents);
     statusSelect.addEventListener('change', filterEvents);
 
@@ -507,13 +595,11 @@
     const resetFilters = () => {
       searchInput.value = '';
       document.getElementById('cat-all').checked = true;
-      priceSelect.value = 'all';
       monthSelect.value = 'all';
-      statusSelect.value = 'aktif'; 
+      statusSelect.value = 'all'; 
       
       isLoadMoreClicked = false; 
       filterEvents();
-
       document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
     };
 
@@ -523,7 +609,7 @@
   });
 </script>
 
-  </main>
+</main>
 
   <footer id="footer" class="footer accent-background">
     <div class="container footer-top">
