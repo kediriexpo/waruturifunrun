@@ -133,395 +133,129 @@
       </div>
     </div>
     
-<section id="catalog" class="catalog section pb-5">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-5">
-
-      <div class="col-lg-3">
-        <div class="sidebar-filter p-4 bg-white rounded-4 shadow-sm sticky-top border-top border-4" style="border-top-color: #7c25ba !important; top: 100px; z-index: 10;">
-          <div class="d-flex align-items-center mb-4 border-bottom pb-3">
-            <i class="bi bi-funnel-fill fs-4 me-2" style="color: #7c25ba;"></i>
-            <h4 class="fw-bold fs-5 mb-0" style="color: #7c25ba;">Filter Pencarian</h4>
+<section id="services" class="services-modern section py-5 bg-light">
+  <div class="container my-5">
+    
+    <div class="row g-4 justify-content-center mx-auto" style="max-width: 1000px;">
+      
+      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card text-center bg-white rounded-4 shadow-sm p-4 p-lg-5 h-100 d-flex flex-column align-items-center">
+          <div class="icon-circle mb-4">
+            <i class="bi bi-cup-straw text-white"></i>
           </div>
-
-          <div id="advanced-filter"> 
-            
-            <div class="mb-4">
-              <label class="form-label small fw-bold text-muted">Cari Nama Event</label>
-              <div class="input-group">
-                <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-                <input type="text" id="searchInput" class="form-control border-start-0 ps-0 focus-none" placeholder="Cari...">
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label small fw-bold text-muted">Status Event</label>
-              <select id="statusFilter" class="form-select custom-select focus-none">
-                <option value="all" selected>Semua Status</option>
-                <option value="aktif">Akan Datang / Aktif</option>
-                <option value="selesai">Telah Dilaksanakan</option>
-              </select>
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label small fw-bold text-muted">Kategori</label>
-              <div class="form-check custom-check mb-2">
-                <input class="form-check-input filter-category" type="radio" name="category" id="cat-all" value="all" checked>
-                <label class="form-check-label" for="cat-all">Semua Kategori</label>
-              </div>
-              <div class="form-check custom-check mb-2">
-                <input class="form-check-input filter-category" type="radio" name="category" id="cat-konser" value="konser">
-                <label class="form-check-label" for="cat-konser">Konser & Hiburan</label>
-              </div>
-              <div class="form-check custom-check mb-2">
-                <input class="form-check-input filter-category" type="radio" name="category" id="cat-outbound" value="outbound">
-                <label class="form-check-label" for="cat-outbound">Outbound & Petualangan</label>
-              </div>
-              <div class="form-check custom-check mb-2">
-                <input class="form-check-input filter-category" type="radio" name="category" id="cat-kuliner" value="kuliner">
-                <label class="form-check-label" for="cat-kuliner">Festival Kuliner</label>
-              </div>
-              <div class="form-check custom-check mb-2">
-                <input class="form-check-input filter-category" type="radio" name="category" id="cat-pendidikan" value="pendidikan">
-                <label class="form-check-label" for="cat-pendidikan">Pendidikan & Pelatihan</label>
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label small fw-bold text-muted">Harga Tiket</label>
-              <select id="priceFilter" class="form-select custom-select focus-none">
-                <option value="all">Semua Harga</option>
-                <option value="gratis">Gratis</option>
-                <option value="under_100k">Di bawah Rp 100.000</option>
-                <option value="above_100k">Di atas Rp 100.000</option>
-              </select>
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label small fw-bold text-muted">Bulan</label>
-              <select id="monthFilter" class="form-select custom-select focus-none">
-                <option value="all">Semua Bulan</option>
-                <option value="05">Mei</option>
-                <option value="06">Juni</option>
-                <option value="07">Juli</option>
-                <option value="08">Agustus</option>
-              </select>
-            </div>
-
-            <button type="button" id="resetBtn" class="btn btn-outline-secondary w-100 rounded-pill btn-sm">Reset Filter</button>
-          </div>
+          <h4 class="fw-bold mb-3 fs-5" style="color: #2c4964;">Event Terdekat</h4>
+          <p class="text-muted small lh-lg flex-grow-1">
+            Jelajahi beragam event terdekat dari kami dan temukan inspirasi segar untuk rencanakan acara impianmu. Dapatkan ide-ide kreatif dari event-event terdekat yang akan kami tangani!
+          </p>
+          <a href="event-terdekat.html" class="btn-more mt-4 fw-bold text-decoration-none">Lebih Detail <i class="bi bi-arrow-right ms-1"></i></a>
         </div>
       </div>
 
-      <div class="col-lg-9">
-        
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <p class="mb-0 text-muted">Menampilkan <span id="resultCount" class="fw-bold text-dark">0</span> event</p>
+      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card text-center bg-white rounded-4 shadow-sm p-4 p-lg-5 h-100 d-flex flex-column align-items-center">
+          <div class="icon-circle mb-4">
+            <i class="bi bi-dribbble text-white"></i> 
+          </div>
+          <h4 class="fw-bold mb-3 fs-5" style="color: #2c4964;">Sport Event</h4>
+          <p class="text-muted small lh-lg flex-grow-1">
+            Wujudkan event olahraga impian Anda bersama kami! Kami menyediakan layanan lengkap untuk berbagai jenis olahraga baik umum maupun e-sport dengan konsep yang seru, profesional, dan penuh semangat.
+          </p>
+          <a href="sport-event.html" class="btn-more mt-4 fw-bold text-decoration-none">Lebih Detail <i class="bi bi-arrow-right ms-1"></i></a>
         </div>
-
-        <div class="row gy-4" id="event-grid">
-
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="pendidikan" data-price="above_100k" data-date="2026-06-15" data-title="Program Holiday Global English Pare">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;" onclick="window.open('https://globalenglish.co.id/', '_blank');">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/globalenglishpare.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Global English Pare" width="800" height="600" loading="eager" fetchpriority="high" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #0dcaf0;">Mulai Rp 500k</span>
-                <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"><i class="bi bi-star-fill me-1"></i>Pendidikan</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Pelatihan Bahasa</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Program Holiday Global English Pare</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Kampung Inggris, Pare</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 15 Jun</span>
-                  <span class="small fw-bold d-flex align-items-center text-info">Kunjungi Web <i class="bi bi-box-arrow-up-right ms-1"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="konser" data-price="above_100k" data-date="2026-05-10" data-title="Dhoho Indie Music Festival" onclick="location.href='musicfestival.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/konsermegah.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Dhoho Indie" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 150k</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Konser</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Dhoho Indie Music Festival 2026</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Area SLG Kediri</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 10 Mei</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="outbound" data-price="above_100k" data-date="2026-05-15" data-title="Jelajah Off-Road Lereng Kelud" onclick="location.href='offroadkelud.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/offroad.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Offroad Kelud" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 250k/pax</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Outbound</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Jelajah Off-Road Lereng Kelud</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Wisata Gunung Kelud</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 15 Mei</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="kuliner" data-price="gratis" data-date="2026-05-20" data-title="Festival Tahu Takwa Nusantara" onclick="location.href='festivalkulinertahu.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/kulinermalam.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Festival Tahu" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge bg-success position-absolute top-0 end-0 m-3">Gratis</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Kuliner</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Festival Tahu Takwa Nusantara</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Taman Sekartaji</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 20 Mei</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="konser" data-price="under_100k" data-date="2026-06-01" data-title="Akustik Senja Taman Brantas" onclick="location.href='akustik.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/manasikhaji.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Akustik Senja" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 35k</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Konser</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Akustik Senja Taman Brantas</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Taman Brantas Kediri</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 01 Jun</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="outbound" data-price="above_100k" data-date="2026-06-12" data-title="Family Gathering Outbound Bukit Dhoho" onclick="location.href='outbound.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/outboundtariktambang.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Outbound Bukit Dhoho" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 120k/pax</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Outbound</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Family Gathering Bukit Dhoho Indah</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> BDI Banyakan</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 12 Jun</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-4 event-item" data-status="aktif" data-category="kuliner" data-price="under_100k" data-date="2026-06-20" data-title="Pesta Durian Slumbung" onclick="location.href='duriankuliner.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/kulinermalam.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Pesta Durian" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Mulai Rp 50k</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Kuliner</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Pesta Durian Desa Slumbung</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Ngadiluwih, Kediri</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 20 Jun</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-4 event-item" data-status="selesai" data-category="outbound" data-price="under_100k" data-date="2026-03-01" data-title="Waruturi Fun Run">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;" onclick="location.href='waruturirun.html';">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/waruturifunrun.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Waruturi Fun Run" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge bg-danger position-absolute top-0 end-0 m-3">Selesai</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Olahraga & Lari</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Waruturi Fun Run 5K</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Bendung Gerak Waruturi</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 15 Feb</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Lihat Event <i class="bi bi-arrow-right-short fs-5"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-4 event-item extra-card d-none" data-status="aktif" data-category="konser" data-price="above_100k" data-date="2026-07-05" data-title="Konser Pesta Rakyat SLG" onclick="location.href='pestarakyat.html';">
-            <article class="event-card h-100 bg-white rounded-4 shadow-sm border-0 d-flex flex-column" style="cursor: pointer;">
-              <div class="position-relative overflow-hidden rounded-top-4" style="aspect-ratio: 4/3;">
-                <img src="assets/img/museum.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Pesta Rakyat" width="800" height="600" loading="lazy" decoding="async">
-                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: #7c25ba;">Rp 100k</span>
-              </div>
-              <div class="p-4 flex-grow-1 d-flex flex-column">
-                <span class="text-uppercase small fw-bold mb-2" style="color: #7c25ba;">Konser</span>
-                <h3 class="fs-5 fw-bold mb-3 event-card-title">Konser Pesta Rakyat SLG</h3>
-                <p class="text-muted small mb-4 flex-grow-1"><i class="bi bi-geo-alt me-1 text-muted"></i> Simpang Lima Gumul</p>
-                <div class="border-top pt-3 d-flex justify-content-between align-items-center">
-                  <span class="small fw-bold text-muted"><i class="bi bi-calendar-event me-1"></i> 05 Jul</span>
-                  <span class="small fw-bold d-flex align-items-center" style="color: #7c25ba;">Detail <i class="bi bi-arrow-right-short fs-5"></i></span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-        </div>
-
-        <div id="no-results" class="col-12 text-center py-5 d-none">
-          <i class="bi bi-inboxes fs-1 mb-3 d-block" style="color: #ccc;"></i>
-          <h4 class="fw-bold">Yah, Event Tidak Ditemukan</h4>
-          <p class="text-muted">Coba kurangi filter pencarian Anda atau cari dengan kata kunci lain.</p>
-          <button type="button" id="btnResetEmpty" class="btn text-white rounded-pill px-4 mt-3 fw-bold" style="background-color: #7c25ba;">Lihat Semua Event</button>
-        </div>
-
-        <div class="text-center mt-5" id="load-more-container">
-          <button type="button" id="btnLoadMore" class="btn btn-outline-custom rounded-pill px-5 fw-bold py-2">
-            Muat Lebih Banyak <i class="bi bi-arrow-clockwise ms-2" id="loadMoreIcon"></i>
-          </button>
-        </div>
-
       </div>
+
+      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card text-center bg-white rounded-4 shadow-sm p-4 p-lg-5 h-100 d-flex flex-column align-items-center">
+          <div class="icon-circle mb-4">
+            <i class="bi bi-journal-text text-white"></i>
+          </div>
+          <h4 class="fw-bold mb-3 fs-5" style="color: #2c4964;">School Competition</h4>
+          <p class="text-muted small lh-lg flex-grow-1">
+            Bawa kompetisi antar sekolah ke level berikutnya! Kami hadir dengan konsep lomba yang seru dan mendidik dari kompetisi akademik, seni, hingga e-sport untuk memberikan pengalaman luar biasa bagi para peserta.
+          </p>
+          <a href="school-competition.html" class="btn-more mt-4 fw-bold text-decoration-none">Lebih Detail <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-card text-center bg-white rounded-4 shadow-sm p-4 p-lg-5 h-100 d-flex flex-column align-items-center">
+          <div class="icon-circle mb-4">
+            <i class="bi bi-person-workspace text-white"></i>
+          </div>
+          <h4 class="fw-bold mb-3 fs-5" style="color: #2c4964;">Seminar & Pelatihan</h4>
+          <p class="text-muted small lh-lg flex-grow-1">
+            Tingkatkan kapasitas dan keterampilan tim Anda melalui program seminar dan pelatihan interaktif. Kami merancang acara yang edukatif, menghadirkan narasumber ahli, serta menciptakan suasana belajar yang inspiratif dan profesional.
+          </p>
+          <a href="seminar-pelatihan.html" class="btn-more mt-4 fw-bold text-decoration-none">Lebih Detail <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    
-    const searchInput = document.getElementById('searchInput');
-    const categoryRadios = document.querySelectorAll('.filter-category');
-    const priceSelect = document.getElementById('priceFilter');
-    const monthSelect = document.getElementById('monthFilter');
-    const statusSelect = document.getElementById('statusFilter');
-    
-    const eventCards = document.querySelectorAll('.event-item'); 
-    const extraCards = document.querySelectorAll('.extra-card'); 
-    
-    const resultCountTxt = document.getElementById('resultCount');
-    const noResultsMsg = document.getElementById('no-results');
-    const resetBtn = document.getElementById('resetBtn');
-    const btnResetEmpty = document.getElementById('btnResetEmpty');
-    
-    const btnLoadMore = document.getElementById('btnLoadMore');
-    const loadMoreContainer = document.getElementById('load-more-container');
-    const loadMoreIcon = document.getElementById('loadMoreIcon');
+<style>
+  /*--------------------------------------------------------------
+# Modern Services Section (Card Style)
+--------------------------------------------------------------*/
+.services-modern {
+  background-color: #f8f9fa; /* Latar belakang abu-abu sangat muda */
+}
 
-    let isLoadMoreClicked = false;
-    let searchTimeout;
+/* Base Card Styling */
+.service-card {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(0,0,0,0.03);
+}
 
-    const filterEvents = () => {
-      const searchTerm = searchInput.value.toLowerCase();
-      const activeCategory = document.querySelector('.filter-category:checked').value;
-      const activePrice = priceSelect.value;
-      const activeMonth = monthSelect.value;
-      const activeStatus = statusSelect.value; 
+/* Hover Effect: Card terangkat dan bayangan membesar */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(124, 37, 186, 0.1) !important; /* Bayangan ungu lembut */
+}
 
-      let visibleCount = 0;
+/* Ikon Lingkaran Gradasi (Sesuai Gambar) */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* Gradien Ungu ke Pink muda */
+  background: linear-gradient(135deg, #5846f9 0%, #d836c4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  /* Bayangan bercahaya (glow) di bawah ikon */
+  box-shadow: 0 10px 20px rgba(216, 54, 196, 0.3); 
+  transition: all 0.4s ease;
+}
 
-      eventCards.forEach((card) => {
-        const title = card.getAttribute('data-title').toLowerCase();
-        const category = card.getAttribute('data-category');
-        const price = card.getAttribute('data-price');
-        const status = card.getAttribute('data-status'); 
-        const date = card.getAttribute('data-date'); 
-        const cardMonth = date.split('-')[1]; 
+/* Efek saat card dihover, ikon sedikit membesar */
+.service-card:hover .icon-circle {
+  transform: scale(1.1);
+  box-shadow: 0 15px 25px rgba(216, 54, 196, 0.5); 
+}
 
-        const matchSearch = title.includes(searchTerm);
-        const matchCategory = (activeCategory === 'all' || activeCategory === category);
-        const matchPrice = (activePrice === 'all' || activePrice === price);
-        const matchMonth = (activeMonth === 'all' || activeMonth === cardMonth);
-        const matchStatus = (activeStatus === 'all' || activeStatus === status);
+/* Tombol Lebih Detail */
+.btn-more {
+  color: #5846f9; /* Ungu kebiruan */
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
 
-        const isExtraAndNotLoaded = card.classList.contains('extra-card') && !isLoadMoreClicked;
+.service-card:hover .btn-more {
+  color: #d836c4; /* Berubah jadi pink muda saat dihover */
+  letter-spacing: 0.5px; /* Sedikit meregang */
+}
 
-        if (matchSearch && matchCategory && matchPrice && matchMonth && matchStatus && !isExtraAndNotLoaded) {
-          card.classList.remove('d-none');
-          card.style.opacity = '1';
-          visibleCount++;
-        } else {
-          card.style.opacity = '0';
-          card.classList.add('d-none');
-        }
-      });
+/* Mencegah teks terlalu mepet di layar HP */
+@media (max-width: 768px) {
+  .service-card {
+    padding: 30px !important;
+  }
+}
+</style>
 
-      resultCountTxt.textContent = visibleCount;
-
-      if (visibleCount === 0) {
-        noResultsMsg.classList.remove('d-none');
-        loadMoreContainer.classList.add('d-none');
-      } else {
-        noResultsMsg.classList.add('d-none');
-        if (searchTerm !== '' || activeCategory !== 'all' || activePrice !== 'all' || activeMonth !== 'all' || activeStatus !== 'aktif' || isLoadMoreClicked) {
-            loadMoreContainer.classList.add('d-none');
-        } else {
-            loadMoreContainer.classList.remove('d-none');
-        }
-      }
-    };
-
-    searchInput.addEventListener('input', () => {
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(filterEvents, 120);
-    });
-    categoryRadios.forEach((radio) => {
-      radio.addEventListener('change', filterEvents);
-    });
-    priceSelect.addEventListener('change', filterEvents);
-    monthSelect.addEventListener('change', filterEvents);
-    statusSelect.addEventListener('change', filterEvents);
-
-    filterEvents();
-
-    if(btnLoadMore) {
-      btnLoadMore.addEventListener('click', () => {
-        loadMoreIcon.classList.add('bi-arrow-repeat', 'spin-anim');
-        btnLoadMore.disabled = true;
-
-        setTimeout(() => {
-          isLoadMoreClicked = true; 
-          filterEvents(); 
-          loadMoreIcon.classList.remove('bi-arrow-repeat', 'spin-anim');
-        }, 800);
-      });
-    }
-
-    const resetFilters = () => {
-      searchInput.value = '';
-      document.getElementById('cat-all').checked = true;
-      priceSelect.value = 'all';
-      monthSelect.value = 'all';
-      statusSelect.value = 'aktif'; 
-      
-      isLoadMoreClicked = false; 
-      filterEvents();
-
-      document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
-    };
-
-    resetBtn.addEventListener('click', resetFilters);
-    if(btnResetEmpty) btnResetEmpty.addEventListener('click', resetFilters);
-
-  });
-</script>
 
   </main>
 

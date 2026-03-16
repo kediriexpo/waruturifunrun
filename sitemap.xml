@@ -68,6 +68,50 @@
 
   <!-- Event Detail Pages -->
   <url>
+    <loc>https://kedirievent.com/seminar-pelatihan.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kedirievent.com/assets/img/pelatihan1_3_11zon.webp</image:loc>
+      <image:title>Seminar &amp; Pelatihan Kediri</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://kedirievent.com/event-terdekat.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kedirievent.com/assets/img/event-terdekat1_8_11zon.webp</image:loc>
+      <image:title>Event Terdekat Kediri</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://kedirievent.com/sport-event.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kedirievent.com/assets/img/sport1_6_11zon.webp</image:loc>
+      <image:title>Sport Event Kediri</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://kedirievent.com/school-competition.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kedirievent.com/assets/img/school3_9_11zon.webp</image:loc>
+      <image:title>School Competition Kediri</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://kedirievent.com/akustik.html</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
